@@ -1,7 +1,7 @@
 Indigo Edwards MPhys project
 
 Link to overleaf viewer: https://www.overleaf.com/read/mzrfdbmnmxnk#c5b4f2 
-
+------------------------------------------------------------------------------------
 git commands because i'll forget
 
   git clone [url]           (download)
