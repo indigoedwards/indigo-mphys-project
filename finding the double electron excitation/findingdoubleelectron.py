@@ -8,7 +8,7 @@ import sys, os
 #This program will iterate through excited states till it finds a state where both electrons are in their first excited state.
 
 #Parameters
-potential = "testpotential"
+potential = "gaussian"
 sensitivity = 20
 limit = 50
 
