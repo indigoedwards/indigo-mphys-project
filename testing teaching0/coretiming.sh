@@ -1,6 +1,7 @@
 #!/bin/bash
 #list numbers to iterate over
 corenumbers="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16"
+runs="1 2 3 4 5 6 7 8 9 10"
 
 #remove summary if it already exists
 rm -f summary.txt
@@ -14,15 +15,12 @@ do
     #run with N cores
     echo "Running with " $N "cores"
     echo $N >> summary.txt
-    OMP_NUM_THREADS=$N python3 coretiming.py >> summary.txt
-    echo "done 1/5"
-    OMP_NUM_THREADS=$N python3 coretiming.py >> summary.txt
-    echo "done 2/5"
-    OMP_NUM_THREADS=$N python3 coretiming.py >> summary.txt
-    echo "done 3/5"
-    OMP_NUM_THREADS=$N python3 coretiming.py >> summary.txt
-    echo "done 4/5"
-    OMP_NUM_THREADS=$N python3 coretiming.py >> summary.txt
-    echo "done 5/5"
+    #run over i runs
+    for i in $runs
+    do
+	OMP_NUM_THREADS=$N python3 coretiming.py >> summary.txt
+	echo "done "$i"/10"
+    done
     echo ":" >> summary.txt
+
 done
