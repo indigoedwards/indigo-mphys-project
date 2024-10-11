@@ -8,8 +8,9 @@ import sys, os
 #This program will iterate through excited states till it finds a state where both electrons are in their first excited state.
 
 #Parameters
-potential = "ISW"
+potential = "testpotential"
 sensitivity = 20
+limit = 50
 
 
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -18,7 +19,7 @@ def isdoubleexcitation (density, sensitivity):
 
     #find peaks in the density which are more than half the height of the maximum.
     density_peaks = sp.signal.find_peaks(density, height = 0.01)
-    print(density_peaks[0])
+    #print(density_peaks[0])
     #if there are 4 peaks then continue, otherwise return false
     if len(density_peaks[0]) != 4:
         return False
@@ -49,6 +50,8 @@ elif potential == "gaussian":
 elif potential == "ISW":
     x = np.linspace(-30, 30, 180)
     v_ext = np.concatenate((np.full(16,100),np.full(29,0.01),np.full(90,100),np.full(30,0),np.full(15,100)))
+else:
+    raise Exception("Invalid potential")
 
 v_int = idea.interactions.softened_interaction(x)
 system = idea.system.System(x,v_ext,v_int,electrons="uu")
@@ -61,7 +64,7 @@ while found == 0:
     teststate = idea.methods.interacting.solve(system, k=i)
     enablePrint()
     density = idea.observables.density(system, state=teststate)
-    if i > 50:
+    if i > limit:
         found = 2
     elif isdoubleexcitation(density,sensitivity) == True:
         found = 1
@@ -71,11 +74,13 @@ while found == 0:
     
 if found == 1:  
     print(f"Double excitation found in the {i}th excited state.")
-    plt.plot(system.x, density, "m-")
-    plt.plot(system.x, v_ext)
+    plt.plot(system.x, density, "m-", label="density")
+    plt.plot(system.x, v_ext, "g--", label="potential")
     plt.xlabel("x")
+    plt.ylim(-0.5,1)
     plt.ylabel("v_ext / prob. density")
+    plt.title(f"Potential: {potential}, Excitation number: {i}")
     plt.legend()
-    plt.show()
+    plt.savefig(f"doubleexcitation{potential}")
 elif found == 2:
     print("No double excitations found up to the 50th excited state")
