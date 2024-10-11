@@ -1,24 +1,29 @@
 import matplotlib.pyplot as plt
 import os
 import numpy as np
+os.chdir(r"C:\Users\edwar\Desktop\Stuff\project\indigo-mphys-project\testing teaching0")
+
+#Takes output from teaching0 timings, averages & plots
+
+#For 10 runs per number of cores
+Nruns = 10
 
 
-with open(r"C:/Users/Iansyst Loan/indigo-mphys-project/testing teaching0/summary.txt") as file:
+with open(r"./summary.txt") as file:
     data = [line.rstrip() for line in file.readlines()]
-    data = [line.split(" ") for line in data]
-    data = np.transpose(data)
-    N = np.delete(data[0],0)
-    t = np.delete(data[1],0)
-    N1 = []
-    t1 = []
-    for i in range(0,len(N)-1):
-        N1 = np.append(N1, float(N[i]))
-    for i in range(0,len(t)-1):
-        t1 = np.append(t1, float(t[i]))
+    data = np.delete(data, 0)
+    data = np.array_split(data,len(data)/(Nruns+2))
+    N = []
+    meant = []
+    for i in range(0,len(data)):
+        data[i] = np.delete(data[i],6)
+        N = np.append(N,float(data[i][0]))
+        tempsum = 0
+        for j in range(1,len(data[i])):
+            tempsum = tempsum + float(data[i][j])
+        meant = np.append(meant,tempsum/Nruns)
 
-
-
-
-
-plt.plot(N1,t1)
+plt.plot(N,meant)
+plt.xlabel("Number of Cores")
+plt.ylabel("Average Time")
 plt.savefig("timings.png")
