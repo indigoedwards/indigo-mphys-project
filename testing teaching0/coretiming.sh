@@ -15,10 +15,14 @@ do
     echo "Running with " $N "cores"
     echo $N >> summary.txt
     OMP_NUM_THREADS=$N python3 coretiming.py >> summary.txt
-    echo "done 1/3"
+    echo "done 1/5"
     OMP_NUM_THREADS=$N python3 coretiming.py >> summary.txt
-    echo "done 2/3"
+    echo "done 2/5"
     OMP_NUM_THREADS=$N python3 coretiming.py >> summary.txt
-    echo "done 3/3"
-    echo "." >> summary.txt
+    echo "done 3/5"
+    OMP_NUM_THREADS=$N python3 coretiming.py >> summary.txt
+    echo "done 4/5"
+    OMP_NUM_THREADS=$N python3 coretiming.py >> summary.txt
+    echo "done 5/5"
+    echo ":" >> summary.txt
 done
