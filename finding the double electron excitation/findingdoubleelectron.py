@@ -8,22 +8,23 @@ import sys, os
 #This program will iterate through excited states till it finds a state where both electrons are in their first excited state.
 
 #Parameters
-potential = "testpotential" #Potential that sam used, double electron excition is k=38
+potential = "ISW"
+sensitivity = 20
 
 
 #------------------------------------------------------------------------------------------------------------------------------------------
 #function to determine if a density contains two electons, each in their first state.
-def isdoubleexcitation (density):
+def isdoubleexcitation (density, sensitivity):
 
     #find peaks in the density which are more than half the height of the maximum.
     density_peaks = sp.signal.find_peaks(density, height = 0.01)
-    #print(density_peaks)
+    print(density_peaks[0])
     #if there are 4 peaks then continue, otherwise return false
-    if len(density_peaks) != 4:
+    if len(density_peaks[0]) != 4:
         return False
     else:
         #if the peaks are grouped into sets of 2 then return true, otherwise return false
-        if abs(x[peaks[0]]-x[peaks[1]]) < 10 and abs(x[peaks[2]]-x[peaks[3]]) < 10:
+        if abs(x[density_peaks[0][1]]-x[density_peaks[0][0]]) < 10 and abs(x[density_peaks[0][3]]-x[density_peaks[0][2]]) < sensitivity:
             return True
         else:
             return False
@@ -45,6 +46,9 @@ if potential == "testpotential":
 elif potential == "gaussian":
     x = np.linspace(-30,30,150)
     v_ext = -2*np.exp(-((x-20)**2)/10) - 2.005*np.exp(-((x+20)**2)/10)
+elif potential == "ISW":
+    x = np.linspace(-30, 30, 180)
+    v_ext = np.concatenate((np.full(16,100),np.full(29,0.01),np.full(90,100),np.full(30,0),np.full(15,100)))
 
 v_int = idea.interactions.softened_interaction(x)
 system = idea.system.System(x,v_ext,v_int,electrons="uu")
@@ -59,9 +63,9 @@ while found == 0:
     density = idea.observables.density(system, state=teststate)
     if i > 50:
         found = 2
-    elif isdoubleexcitation(density) == True:
+    elif isdoubleexcitation(density,sensitivity) == True:
         found = 1
-    elif isdoubleexcitation(density) == False:
+    elif isdoubleexcitation(density,sensitivity) == False:
         print(f"Searched k={i}, continuing...")
         i = i + 1
     
