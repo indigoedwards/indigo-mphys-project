@@ -130,7 +130,8 @@ def moveelectrons(distancelist):
         plt.ylim(-2,0.75)
         plt.legend()
         plt.savefig(f"{str(distance).zfill(3)}.png")
-
+        plt.close()
+        
     #create gif from saved plots
     with contextlib.ExitStack() as stack:
         # lazily load images
