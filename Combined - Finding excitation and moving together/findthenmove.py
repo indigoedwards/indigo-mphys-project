@@ -67,7 +67,9 @@ def getpotential(potential, distance):
 #cycle through excitation states to find the double excitation
 def finddoubleexcitation():
     #solve
+    print("Finding double excitation")
     distance = 20
+    v_int = idea.interactions.softened_interaction(getpotential(potentialchoice,distance)[0])
     system = idea.system.System(getpotential(potentialchoice,distance)[0],getpotential(potentialchoice,distance)[1],v_int,electrons="uu")
     found = 0
     i = 0
@@ -100,9 +102,9 @@ def finddoubleexcitation():
 #-----------------------------------------------------------------------------------------------
 #Moves the electrons closer to eachother
 def moveelectrons(distancelist):
-    print("Generating movement")
     energies = []
-    excitation = finddoubleexcitation(system)
+    excitation = finddoubleexcitation()
+    print("Generating movement")
     #cycle through distances
     for distance in distancelist:
         #define and solve system
@@ -110,8 +112,10 @@ def moveelectrons(distancelist):
         v_ext = getpotential(potentialchoice,distance)[1]
         v_int = idea.interactions.softened_interaction(x)
         system = idea.system.System(x,v_ext,v_int,electrons="uu")
-        solvedsystem = idea.methods.interacting.solve(system, k=finddoubleexcitation())
-        print(round(((np.where(distancelist==distance)+1)/len(distancelist))*100,2), r"% done")
+        blockPrint()           
+        solvedsystem = idea.methods.interacting.solve(system, k=excitation)
+        enablePrint()
+        print(f"{round((float(np.where(distancelist==distance)[0][0]+1)/float((len(distancelist))))*100,2)} percent done")
 
         #calculate observables
         charge_density = idea.observables.density(system, state=solvedsystem)
@@ -126,21 +130,20 @@ def moveelectrons(distancelist):
         plt.ylim(-2,0.75)
         plt.legend()
         plt.savefig(f"{str(distance).zfill(3)}.png")
-        plt.close()
 
-        #create gif from saved plots
-        with contextlib.ExitStack() as stack:
-            # lazily load images
-            imgs = (stack.enter_context(Image.open(f))
-                    for f in sorted(glob.glob(fp_in)))
-            # extract  first image from iterator
-            img = next(imgs)
-            # https://pillow.readthedocs.io/en/stable/handbook/image-file-formats.html#gif
-            img.save(fp=fp_out, format='GIF', append_images=imgs,
-                    save_all=True, duration=100, loop=0)
+    #create gif from saved plots
+    with contextlib.ExitStack() as stack:
+        # lazily load images
+        imgs = (stack.enter_context(Image.open(f))
+                for f in sorted(glob.glob(fp_in)))
+        # extract  first image from iterator
+        img = next(imgs)
+        # https://pillow.readthedocs.io/en/stable/handbook/image-file-formats.html#gif
+        img.save(fp=fp_out, format='GIF', append_images=imgs,
+                save_all=True, duration=100, loop=0)
 
 
-        return energies
+    return energies
 
 
 #-------------------------------------------------------------------------------------------------------
