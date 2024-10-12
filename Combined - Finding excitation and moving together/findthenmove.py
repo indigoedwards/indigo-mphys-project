@@ -129,7 +129,7 @@ def moveelectrons(distancelist):
         plt.ylabel("v_ext / prob. density")
         plt.ylim(-2,0.75)
         plt.legend()
-        plt.savefig(f"{str(distance).zfill(3)}.png")
+        plt.savefig(f"{str(np.where(distancelist==distance)[0][0]).zfill(3)}.png")
         plt.close()
         
     #create gif from saved plots
