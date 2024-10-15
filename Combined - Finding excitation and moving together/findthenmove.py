@@ -22,8 +22,8 @@ sensitivity = 20
 limit = 50
 distancelist = np.concatenate((np.linspace(20,5,61), np.linspace(4.9,0,99), np.zeros(5)))
 tolerance = 0.01
-def fitfunc(x,a,b,c,d):
-    return (a*np.exp((x+b)/c))+d
+def fitfunc(x,a,b):
+    return ((a*x)+b)
 
 
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -106,8 +106,8 @@ def finddoubleexcitation():
 #predicting the next energy
 def energy_prediction(distancelist,energies):
     #make arrays the same size
-    pred_distancelist = distancelist[0:len(energies)]
-    pred_energies = energies
+    pred_distancelist = distancelist[len(energies)-4:len(energies)]
+    pred_energies = energies[len(energies)-4:len(energies)]
 
     #apply curve fit
     fit, useless = sp.optimize.curve_fit(fitfunc, pred_distancelist, pred_energies)
