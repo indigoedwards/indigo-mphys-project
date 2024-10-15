@@ -18,6 +18,8 @@ potentialchoice = "gaussian"
 sensitivity = 20
 limit = 50
 
+figure, axis = plt.sublots(1,3)
+
 distancelist = np.concatenate((np.linspace(20,5,61), np.linspace(4.9,0,99), np.zeros(5)))
 
 
@@ -122,30 +124,31 @@ def moveelectrons(distancelist):
         energies.append(idea.observables.hartree_energy(system, charge_density, hartree_potential))
         
         #create and save density plots
-        plt.plot(system.x, charge_density, "m-", label="Prob. Density")
-        plt.plot(system.x, v_ext, "g--", label="Potential")
-        plt.xlabel("x")
-        plt.ylabel("v_ext / prob. density")
-        plt.ylim(-2,0.75)
-        plt.legend()
-        plt.savefig(f"a{str(np.where(distancelist==distance)[0][0]).zfill(3)}.png")
-        plt.close()
+        axis[0].plot(system.x, charge_density, "m-", label="Prob. Density")
+        axis[0].plot(system.x, v_ext, "g--", label="Potential")
+        axis[0].xlabel("x")
+        axis[0].ylabel("v_ext / prob. density")
+        axis[0].ylim(-2,0.75)
+        axis[0].legend()
+        #axis[0].savefig(f"a{str(np.where(distancelist==distance)[0][0]).zfill(3)}.png")
+        #plt.close()
 
         #create and save wavefunction plots
-        plt.imshow(solvedsystem.space.real, cmap="seismic", vmax=0.75, vmin=-0.75)
-        plt.xlabel("x")
-        plt.ylabel("x'")
-        plt.gca().invert_yaxis()
-        plt.savefig(f"b{str(np.where(distancelist==distance)[0][0]).zfill(3)}.png")
-        plt.close()
+        axis[1].imshow(solvedsystem.space.real, cmap="seismic", vmax=0.75, vmin=-0.75)
+        axis[1].xlabel("x")
+        axis[1].ylabel("x'")
+        axis[1].gca().invert_yaxis()
+        #axis[1].savefig(f"b{str(np.where(distancelist==distance)[0][0]).zfill(3)}.png")
+        #plt.close()
 
         #create and save energy plots
-        plt.plot(distancelist[0:len(energies)], energies)
-        plt.xlabel("Distance")
-        plt.ylabel("Hartree Energy")
-        plt.xlim(max(distancelist),0)
-        plt.savefig(f"c{str(np.where(distancelist==distance)[0][0]).zfill(3)}.png")
-        plt.close()
+        axis[2].plot(distancelist[0:len(energies)], energies)
+        axis[2].xlabel("Distance")
+        axis[2].ylabel("Hartree Energy")
+        axis[2].xlim(max(distancelist),0)
+        #axis[2].savefig(f"c{str(np.where(distancelist==distance)[0][0]).zfill(3)}.png")
+        #plt.close()
+        plt.savefig()
 
     #create gifs from saved plots
     fp_in = "a*.png"
