@@ -101,7 +101,7 @@ def finddoubleexcitation():
 #-----------------------------------------------------------------------------------------------
 #Moves the electrons closer to eachother
 def moveelectrons(distancelist):
-    energies = np.zeros(len(distancelist))
+    energies = []
     excitation = finddoubleexcitation()
     print("Generating movement")
     #cycle through distances
@@ -119,7 +119,7 @@ def moveelectrons(distancelist):
         #calculate observables
         charge_density = idea.observables.density(system, state=solvedsystem)
         hartree_potential = idea.observables.hartree_potential(system, charge_density)
-        energies[np.where(distancelist==distance)[0][0]]=(idea.observables.hartree_energy(system, charge_density, hartree_potential))
+        energies.append(idea.observables.hartree_energy(system, charge_density, hartree_potential))
         
         #create and save density plots
         plt.plot(system.x, charge_density, "m-", label="Prob. Density")
@@ -140,7 +140,7 @@ def moveelectrons(distancelist):
         plt.close()
 
         #create and save energy plots
-        plt.plot(distancelist, energies)
+        plt.plot(distancelist[0:len(energies)], energies)
         plt.xlabel("Distance")
         plt.ylabel("Hartree Energy")
         plt.xlim(max(distancelist),0)
