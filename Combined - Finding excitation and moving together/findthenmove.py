@@ -6,6 +6,7 @@ import sys, os
 import glob
 import contextlib
 from PIL import Image
+import scipy as sp
 
 #This program is used to find an excited state for a specific potential, then move the excited state closer to form a many body excited state
 
@@ -13,13 +14,16 @@ from PIL import Image
 #options for potential: gaussian, 
 #sensitivity is how sensitive the double excitation finder is.
 #limit is how many excited states are searched before it gives up.
+#distancelist defines the x space
+#fitfunc is the function used for the energy fitting
 #-------------------
 potentialchoice = "gaussian"
 sensitivity = 20
 limit = 50
-
 distancelist = np.concatenate((np.linspace(20,5,61), np.linspace(4.9,0,99), np.zeros(5)))
-
+tolerance = 0.01
+def fitfunc(x,a,b,c,d):
+    return (a*np.exp((x+b)/c))+d
 
 
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -98,7 +102,28 @@ def finddoubleexcitation():
         return i
     elif found == 2:
         raise Exception("No double excitations found up to the 50th excited state")
+#------------------------------------------------------------------------------------------------
+#predicting the next energy
+def energyprediction(distancelist,energies):
+    #make arrays the same size
+    pred_distancelist = distancelist[0:len(energies)]
+    pred_energies = energies
+
+    #apply curve fit
+    fit, useless = sp.optimise.curve_fit(fitfunc, pred_distancelist, pred_energies)
+    
+    #return prediction for the next distance value
+    return (fitfunc(distancelist[len(pred_distancelist)+1],*fit))
+
 #-----------------------------------------------------------------------------------------------
+def findenergy(system, solvedsystem):
+    charge_density = idea.observables.density(system, state=solvedsystem)
+    hartree_potential = idea.observables.hartree_potential(system, charge_density)
+    energy = idea.observables.hartree_energy(system, charge_density, hartree_potential)
+    return energy,charge_density
+
+
+
 #Moves the electrons closer to eachother
 def moveelectrons(distancelist):
     energies = []
@@ -111,18 +136,54 @@ def moveelectrons(distancelist):
         v_ext = getpotential(potentialchoice,distance)[1]
         v_int = idea.interactions.softened_interaction(x)
         system = idea.system.System(x,v_ext,v_int,electrons="uu")
+        
+
+
         blockPrint()           
         solvedsystem = idea.methods.interacting.solve(system, k=excitation)
-        enablePrint()
-        print(f"{round((float(np.where(distancelist==distance)[0][0]+1)/float((len(distancelist))))*100,2)} percent done")
+        enablePrint()       
+        energy = findenergy(system, solvedsystem)[0]
 
-        #calculate observables
-        charge_density = idea.observables.density(system, state=solvedsystem)
-        hartree_potential = idea.observables.hartree_potential(system, charge_density)
-        energies.append(idea.observables.hartree_energy(system, charge_density, hartree_potential))
-        
+        #only check if more than 5 iterations in
+        if (np.where(distancelist==distance)[0][0]>5):
+            energyprediction = energyprediction(distancelist,energies)
+        else:
+            energyprediction = energy
+
+        #If the energy is not within the tolerance, try the two states either side
+    
+        if (abs(energy-energyprediction) > tolerance):
+            found = False
+            n=1
+            while found == False:
+                solvedsystem_plus = idea.methods.interacting.solve(system, k=excitation+n)
+                energy_plus = findenergy(system,solvedsystem_plus)[0]
+                solvedsystem_minus = idea.methods.interacting.solve(system, k=excitation-n)
+                energy_minus = findenergy(system,solvedsystem_minus)[0]
+                if (abs(energy_plus-energyprediction) < tolerance and abs(energy_minus-energyprediction) > abs(energy_plus-energyprediction)):
+                    acceptedenergy = energy_plus
+                    excitation = excitation + n
+                    accepteddensity = findenergy(system,solvedsystem_plus)[1]
+                    found = True
+                elif (abs(energy_minus-energyprediction) <tolerance):
+                    acceptedenergy = energy_minus
+                    excitation = excitation -n
+                    found = True
+                    accepteddensity = findenergy(system,solvedsystem_minus)[1]
+                else:
+                    if (n < 3):
+                        n = n + 1
+                    else:
+                        raise Exception("Double excitation state cannot be found within 3 either side")            
+        else:
+            acceptedenergy = energy
+            accepteddensity = findenergy(system,solvedsystem)[1]
+
+        energies.append(acceptedenergy)
+
+        print(f"{round((float(np.where(distancelist==distance)[0][0]+1)/float((len(distancelist))))*100,2)} percent done, k={excitation}")
         #create and save density plots
-        plt.plot(system.x, charge_density, "m-", label="Prob. Density")
+        plt.plot(system.x, accepteddensity, "m-", label="Prob. Density")
         plt.plot(system.x, v_ext, "g--", label="Potential")
         plt.xlabel("x")
         plt.ylabel("v_ext / prob. density")
