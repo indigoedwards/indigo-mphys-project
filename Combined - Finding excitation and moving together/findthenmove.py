@@ -104,7 +104,7 @@ def finddoubleexcitation():
         raise Exception("No double excitations found up to the 50th excited state")
 #------------------------------------------------------------------------------------------------
 #predicting the next energy
-def energyprediction(distancelist,energies):
+def energy_prediction(distancelist,energies):
     #make arrays the same size
     pred_distancelist = distancelist[0:len(energies)]
     pred_energies = energies
@@ -146,7 +146,7 @@ def moveelectrons(distancelist):
 
         #only check if more than 5 iterations in
         if (np.where(distancelist==distance)[0][0]>5):
-            energyprediction = energyprediction(distancelist,energies)
+            energyprediction = energy_prediction(distancelist,energies)
         else:
             energyprediction = energy
 
