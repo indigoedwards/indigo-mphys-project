@@ -110,7 +110,7 @@ def energy_prediction(distancelist,energies):
     pred_energies = energies
 
     #apply curve fit
-    fit, useless = sp.optimise.curve_fit(fitfunc, pred_distancelist, pred_energies)
+    fit, useless = sp.optimize.curve_fit(fitfunc, pred_distancelist, pred_energies)
     
     #return prediction for the next distance value
     return (fitfunc(distancelist[len(pred_distancelist)+1],*fit))
