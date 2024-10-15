@@ -20,6 +20,7 @@ import scipy as sp
 potentialchoice = "gaussian"
 sensitivity = 20
 limit = 50
+distancelist = np.concatenate((np.linspace(20,10,61), np.linspace(10,0,200), np.zeros(5)))
 tolerance = 0.01
 def fitfunc(x,a,b):
     return ((a*x)+b)
