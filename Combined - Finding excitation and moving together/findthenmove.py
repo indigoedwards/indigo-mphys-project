@@ -149,34 +149,11 @@ def moveelectrons(distancelist):
         #axis[2].savefig(f"c{str(np.where(distancelist==distance)[0][0]).zfill(3)}.png")
         #plt.close()
         plt.savefig(f"{str(np.where(distancelist==distance)[0][0]).zfill(3)}.png")
-
+        plt.close()
+        
     #create gifs from saved plots
-    fp_in = "a*.png"
-    fp_out = "density.gif"
-    with contextlib.ExitStack() as stack:
-        # lazily load images
-        imgs = (stack.enter_context(Image.open(f))
-                for f in sorted(glob.glob(fp_in)))
-        # extract  first image from iterator
-        img = next(imgs)
-        # https://pillow.readthedocs.io/en/stable/handbook/image-file-formats.html#gif
-        img.save(fp=fp_out, format='GIF', append_images=imgs,
-                save_all=True, duration=100, loop=0)
-
-    fp_in = "b*.png"
-    fp_out = "wavefunction.gif"
-    with contextlib.ExitStack() as stack:
-        # lazily load images
-        imgs = (stack.enter_context(Image.open(f))
-                for f in sorted(glob.glob(fp_in)))
-        # extract  first image from iterator
-        img = next(imgs)
-        # https://pillow.readthedocs.io/en/stable/handbook/image-file-formats.html#gif
-        img.save(fp=fp_out, format='GIF', append_images=imgs,
-                save_all=True, duration=100, loop=0)
-    
-    fp_in = "c*.png"
-    fp_out = "energy.gif"
+    fp_in = "*.png"
+    fp_out = "plots.gif"
     with contextlib.ExitStack() as stack:
         # lazily load images
         imgs = (stack.enter_context(Image.open(f))
