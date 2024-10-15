@@ -18,8 +18,6 @@ potentialchoice = "gaussian"
 sensitivity = 20
 limit = 50
 
-figure, axis = plt.subplots(1,3)
-
 distancelist = np.concatenate((np.linspace(20,5,61), np.linspace(4.9,0,99), np.zeros(5)))
 
 
@@ -124,36 +122,58 @@ def moveelectrons(distancelist):
         energies.append(idea.observables.hartree_energy(system, charge_density, hartree_potential))
         
         #create and save density plots
-        axis[0].plot(system.x, charge_density, "m-", label="Prob. Density")
-        axis[0].plot(system.x, v_ext, "g--", label="Potential")
-        axis[0].set_xlabel("x")
-        axis[0].set_ylabel("v_ext / prob. density")
-        axis[0].set_ylim(-2,0.75)
-        axis[0].legend()
-        #axis[0].savefig(f"a{str(np.where(distancelist==distance)[0][0]).zfill(3)}.png")
-        #plt.close()
+        plt.plot(system.x, charge_density, "m-", label="Prob. Density")
+        plt.plot(system.x, v_ext, "g--", label="Potential")
+        plt.xlabel("x")
+        plt.ylabel("v_ext / prob. density")
+        plt.ylim(-2,0.75)
+        plt.legend()
+        plt.savefig(f"a{str(np.where(distancelist==distance)[0][0]).zfill(3)}.png")
+        plt.close()
 
         #create and save wavefunction plots
-        axis[1].imshow(solvedsystem.space.real, cmap="seismic", vmax=0.75, vmin=-0.75)
-        axis[1].set_xlabel("x")
-        axis[1].set_ylabel("x'")
-        axis[1].set_ylim(0,140)
-        #axis[1].savefig(f"b{str(np.where(distancelist==distance)[0][0]).zfill(3)}.png")
-        #plt.close()
+        plt.imshow(solvedsystem.space.real, cmap="seismic", vmax=0.75, vmin=-0.75)
+        plt.xlabel("x")
+        plt.ylabel("x'")
+        plt.gca().invert_yaxis()
+        plt.savefig(f"b{str(np.where(distancelist==distance)[0][0]).zfill(3)}.png")
+        plt.close()
 
         #create and save energy plots
-        axis[2].plot(distancelist[0:len(energies)], energies)
-        axis[2].set_xlabel("Distance")
-        axis[2].set_ylabel("Hartree Energy")
-        axis[2].set_xlim(max(distancelist),0)
-        #axis[2].savefig(f"c{str(np.where(distancelist==distance)[0][0]).zfill(3)}.png")
-        #plt.close()
-        plt.savefig(f"{str(np.where(distancelist==distance)[0][0]).zfill(3)}.png")
+        plt.plot(distancelist[0:len(energies)], energies)
+        plt.xlabel("Distance")
+        plt.ylabel("Hartree Energy")
+        plt.xlim(max(distancelist),0)
+        plt.savefig(f"c{str(np.where(distancelist==distance)[0][0]).zfill(3)}.png")
         plt.close()
-        
+
     #create gifs from saved plots
-    fp_in = "*.png"
-    fp_out = "plots.gif"
+    fp_in = "a*.png"
+    fp_out = "density.gif"
+    with contextlib.ExitStack() as stack:
+        # lazily load images
+        imgs = (stack.enter_context(Image.open(f))
+                for f in sorted(glob.glob(fp_in)))
+        # extract  first image from iterator
+        img = next(imgs)
+        # https://pillow.readthedocs.io/en/stable/handbook/image-file-formats.html#gif
+        img.save(fp=fp_out, format='GIF', append_images=imgs,
+                save_all=True, duration=100, loop=0)
+
+    fp_in = "b*.png"
+    fp_out = "wavefunction.gif"
+    with contextlib.ExitStack() as stack:
+        # lazily load images
+        imgs = (stack.enter_context(Image.open(f))
+                for f in sorted(glob.glob(fp_in)))
+        # extract  first image from iterator
+        img = next(imgs)
+        # https://pillow.readthedocs.io/en/stable/handbook/image-file-formats.html#gif
+        img.save(fp=fp_out, format='GIF', append_images=imgs,
+                save_all=True, duration=100, loop=0)
+    
+    fp_in = "c*.png"
+    fp_out = "energy.gif"
     with contextlib.ExitStack() as stack:
         # lazily load images
         imgs = (stack.enter_context(Image.open(f))
