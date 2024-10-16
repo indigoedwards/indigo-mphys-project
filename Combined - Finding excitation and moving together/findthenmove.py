@@ -20,8 +20,8 @@ import scipy as sp
 potentialchoice = "gaussian"
 sensitivity = 20
 limit = 50
-distancelist = np.concatenate((np.linspace(20,10,61), np.linspace(10,0,200), np.zeros(5)))
-tolerance = 0.01
+distancelist = np.concatenate((np.linspace(20,10,200), np.linspace(10,0,200), np.zeros(5)))
+tolerance = 0.02
 def fitfunc(x,a,b):
     return ((a*x)+b)
 
@@ -58,7 +58,7 @@ def getpotential(potential, distance):
         x = np.linspace(-60,60,150)
         v_ext = -0.49*np.exp(-1e-3*(x+40)**4) -0.5*np.exp(-1e-3*(x-40)**4)
     elif potential == "gaussian":
-        x = np.linspace(-30,30,150)
+        x = np.linspace(-30,30,300)
         v_ext=-2*np.exp(-((x-distance)**2)/10) - 2.005*np.exp(-((x+distance)**2)/10)
     elif potential == "ISW":
         x = np.linspace(-30, 30, 180)
@@ -151,7 +151,9 @@ def moveelectrons(distancelist):
             energyprediction = energy
 
         #If the energy is not within the tolerance, try the two states either side
-    
+        print("Prediction: ",energyprediction)
+        print("energy: ", energy)
+        print("difference: ",abs(energy-energyprediction))
         if (abs(energy-energyprediction) > tolerance):
             found = False
             n=1
@@ -160,6 +162,11 @@ def moveelectrons(distancelist):
                 energy_plus = findenergy(system,solvedsystem_plus)[0]
                 solvedsystem_minus = idea.methods.interacting.solve(system, k=excitation-n)
                 energy_minus = findenergy(system,solvedsystem_minus)[0]
+                
+                print("energy plus: ",energy_plus)
+                print("plus difference: ",abs(energy_plus-energyprediction))
+                print("energy minus: ",energy_minus)
+                print("minus difference: ",abs(energy_minus-energyprediction))
                 if (abs(energy_plus-energyprediction) < tolerance and abs(energy_minus-energyprediction) > abs(energy_plus-energyprediction)):
                     acceptedenergy = energy_plus
                     excitation = excitation + n
