@@ -7,6 +7,7 @@ import glob
 import contextlib
 from PIL import Image
 import scipy as sp
+import datetime
 
 #This program is used to find an excited state for a specific potential, then move the excited state closer to form a many body excited state
 
@@ -21,17 +22,19 @@ import scipy as sp
 potentialchoice = "gaussian"
 sensitivity = 20
 limit = 50
-<<<<<<< HEAD
-distancelist = np.concatenate((np.linspace(20,10,61), np.linspace(10,0,200), np.zeros(5)))
-tolerance = 0.02
 predictiondatapoints = 4
-=======
-distancelist = np.concatenate((np.linspace(20,10,200), np.linspace(10,0,200), np.zeros(5)))
+distancelist = np.concatenate((np.linspace(10,0,200), np.zeros(5)))
 tolerance = 0.02
->>>>>>> 231414bf0a49f4d6eaacc11e59f9a803d5ff88b2
 def fitfunc(x,a,b):
     return ((a*x)+b) #linear
 
+output_filename = "output.txt"    
+
+#--------------------------------------------------------------------------------------------
+#Writing to output file
+def writetooutput(message):
+    with open(output_filename,"a") as file:
+        file.write(f"{message}\n")
 
 #------------------------------------------------------------------------------------------------------------------------------------------
 #function to determine if a density contains two electons, each in their first state.
@@ -66,11 +69,7 @@ def getpotential(potential, distance):
         v_ext = -0.49*np.exp(-1e-3*(x+40)**4) -0.5*np.exp(-1e-3*(x-40)**4)
     elif potential == "gaussian":
         x = np.linspace(-30,30,300)
-<<<<<<< HEAD
         v_ext=-4*np.exp(-((x-distance)**2)/10) - 4.005*np.exp(-((x+distance)**2)/10)
-=======
-        v_ext=-2*np.exp(-((x-distance)**2)/10) - 2.005*np.exp(-((x+distance)**2)/10)
->>>>>>> 231414bf0a49f4d6eaacc11e59f9a803d5ff88b2
     elif potential == "ISW":
         x = np.linspace(-30, 30, 180)
         v_ext = np.concatenate((np.full(16,100),np.full(29,0.01),np.full(90,100),np.full(30,0),np.full(15,100)))
@@ -81,7 +80,7 @@ def getpotential(potential, distance):
 #cycle through excitation states to find the double excitation
 def finddoubleexcitation():
     #solve
-    print("Finding double excitation")
+    writetooutput("Finding doauble excitation")
     distance = 20
     v_int = idea.interactions.softened_interaction(getpotential(potentialchoice,distance)[0])
     system = idea.system.System(getpotential(potentialchoice,distance)[0],getpotential(potentialchoice,distance)[1],v_int,electrons="uu")
@@ -97,11 +96,11 @@ def finddoubleexcitation():
         elif isdoubleexcitation(density,sensitivity) == True:
             found = 1
         elif isdoubleexcitation(density,sensitivity) == False:
-            print(f"Searched k={i}, continuing...")
+            writetooutput(f"Searched k={i}, continuing...")
             i = i + 1
         
     if found == 1:  
-        print(f"Double excitation found in the {i}th excited state.")
+        writetooutput(f"Double excitation found in the {i}th excited state.")
         #plt.plot(system.x, density, "m-", label="density")
         #plt.plot(system.x, v_ext, "g--", label="potential")
         #plt.xlabel("x")
@@ -139,7 +138,7 @@ def findenergy(system, solvedsystem):
 def moveelectrons(distancelist):
     energies = []
     excitation = finddoubleexcitation()
-    print("Generating movement")
+    writetooutput("Generating movement")
     #cycle through distances
     for distance in distancelist:
         #define and solve system
@@ -160,16 +159,11 @@ def moveelectrons(distancelist):
             energyprediction = energy_prediction(distancelist,energies)
         else:
             energyprediction = energy
-
-<<<<<<< HEAD
-        #If the energy is not within the tolerance, try the states either side
     
-=======
         #If the energy is not within the tolerance, try the two states either side
-        print("Prediction: ",energyprediction)
-        print("energy: ", energy)
-        print("difference: ",abs(energy-energyprediction))
->>>>>>> 231414bf0a49f4d6eaacc11e59f9a803d5ff88b2
+        writetooutput(f"Prediction: {energyprediction}")
+        writetooutput(f"energy: {energy}")
+        writetooutput(f"difference: {abs(energy-energyprediction)}")
         if (abs(energy-energyprediction) > tolerance):
             found = False
             n=1
@@ -179,10 +173,10 @@ def moveelectrons(distancelist):
                 solvedsystem_minus = idea.methods.interacting.solve(system, k=excitation-n)
                 energy_minus = findenergy(system,solvedsystem_minus)[0]
                 
-                print("energy plus: ",energy_plus)
-                print("plus difference: ",abs(energy_plus-energyprediction))
-                print("energy minus: ",energy_minus)
-                print("minus difference: ",abs(energy_minus-energyprediction))
+                writetooutput(f"energy plus: {energy_plus}")
+                writetooutput(f"plus difference: {abs(energy_plus-energyprediction)}")
+                writetooutput(f"energy minus: {energy_minus}")
+                writetooutput(f"minus difference: {abs(energy_minus-energyprediction)}")
                 if (abs(energy_plus-energyprediction) < tolerance and abs(energy_minus-energyprediction) > abs(energy_plus-energyprediction)):
                     acceptedenergy = energy_plus
                     excitation = excitation + n
@@ -204,7 +198,7 @@ def moveelectrons(distancelist):
 
         energies.append(acceptedenergy)
 
-        print(f"{round((float(np.where(distancelist==distance)[0][0]+1)/float((len(distancelist))))*100,2)} percent done, k={excitation}")
+        writetooutput(f"{round((float(np.where(distancelist==distance)[0][0]+1)/float((len(distancelist))))*100,2)} percent done, k={excitation}, distance={distance}")
         #create and save density plots
         plt.plot(system.x, accepteddensity, "m-", label="Prob. Density")
         plt.plot(system.x, v_ext, "g--", label="Potential")
@@ -273,14 +267,15 @@ def moveelectrons(distancelist):
 
 #-------------------------------------------------------------------------------------------------------
 #Run program
-
+writetooutput("-----------------------------------------------------------")
+writetooutput(f"===BEGIN PROGRAM {datetime.datetime.now()}===")
 energies = moveelectrons(distancelist)
 plt.plot(distancelist, energies)
 plt.xlabel("Distance")
 plt.ylabel("Hartree Energy")
 plt.xlim(max(distancelist),0)
 plt.savefig("energyplot.png")
-print("Done! :D")
+writetooutput("Done! :D")
 
 
 #-----------------------------------------------------------------------------------------------

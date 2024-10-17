@@ -1,0 +1,281 @@
+Finding doauble excitation
+Finding doauble excitation
+Searched k=0, continuing...
+Searched k=1, continuing...
+Searched k=2, continuing...
+Searched k=3, continuing...
+Searched k=4, continuing...
+-----------------------------------------------------------
+===BEGIN PROGRAM===
+Finding doauble excitation
+Searched k=0, continuing...
+Searched k=1, continuing...
+Searched k=5, continuing...
+Searched k=2, continuing...
+-----------------------------------------------------------
+===BEGIN PROGRAM===
+Finding doauble excitation
+Searched k=0, continuing...
+Searched k=1, continuing...
+Searched k=2, continuing...
+Searched k=3, continuing...
+Searched k=4, continuing...
+-----------------------------------------------------------
+===BEGIN PROGRAM===
+Finding doauble excitation
+Searched k=0, continuing...
+-----------------------------------------------------------
+===BEGIN PROGRAM===
+Finding doauble excitation
+Searched k=0, continuing...
+Searched k=1, continuing...
+Searched k=2, continuing...
+Searched k=3, continuing...
+Searched k=4, continuing...
+Searched k=5, continuing...
+Searched k=6, continuing...
+Double excitation found in the 7th excited state.
+Generating movement
+-----------------------------------------------------------
+===BEGIN PROGRAM 2024-10-17 15:41:04.635089===
+Finding doauble excitation
+Searched k=0, continuing...
+Searched k=1, continuing...
+Searched k=2, continuing...
+Searched k=3, continuing...
+Searched k=4, continuing...
+Searched k=5, continuing...
+Searched k=6, continuing...
+Double excitation found in the 7th excited state.
+Generating movement
+Prediction: 0.5290633592783047
+energy: 0.5290633592783047
+difference: 0.0
+0.49 percent done, k=7, distance=10.0
+Prediction: 0.5292985925328069
+energy: 0.5292985925328069
+difference: 0.0
+0.98 percent done, k=7, distance=9.949748743718592
+Prediction: 0.5295361595737557
+energy: 0.5295361595737557
+difference: 0.0
+1.46 percent done, k=7, distance=9.899497487437186
+Prediction: 0.5297760955784786
+energy: 0.5297760955784786
+difference: 0.0
+1.95 percent done, k=7, distance=9.849246231155778
+Prediction: 0.5300184364399657
+energy: 0.5300184364399657
+difference: 0.0
+2.44 percent done, k=7, distance=9.798994974874372
+Prediction: 0.5302632187852859
+energy: 0.5302632187852859
+difference: 0.0
+2.93 percent done, k=7, distance=9.748743718592964
+Prediction: 0.5302620053687831
+energy: 0.5305104799945671
+difference: 0.00024847462578403423
+3.41 percent done, k=7, distance=9.698492462311558
+Prediction: 0.5302644544789303
+energy: 0.5307602582205815
+difference: 0.0004958037416511463
+3.9 percent done, k=7, distance=9.64824120603015
+Prediction: 0.5302644620328253
+energy: 0.5310125924089447
+difference: 0.0007481303761194269
+4.39 percent done, k=7, distance=9.597989949748744
+Prediction: 0.5302619524877962
+energy: 0.5312675223189504
+difference: 0.001005569831154185
+4.88 percent done, k=7, distance=9.547738693467336
+Prediction: 0.5302568479453862
+energy: 0.5315250885450832
+difference: 0.0012682405996969903
+5.37 percent done, k=7, distance=9.49748743718593
+Prediction: 0.5302490680372064
+energy: 0.5317853325392053
+difference: 0.0015362645019989518
+5.85 percent done, k=7, distance=9.447236180904522
+Prediction: 0.5302385299414115
+energy: 0.5320482966334699
+difference: 0.0018097666920583455
+6.34 percent done, k=7, distance=9.396984924623116
+Prediction: 0.5302251481934528
+energy: 0.5323140240639715
+difference: 0.0020888758705187582
+6.83 percent done, k=7, distance=9.346733668341708
+Prediction: 0.5302088345223278
+energy: 0.5325825589951689
+difference: 0.002373724472841121
+7.32 percent done, k=7, distance=9.296482412060302
+Prediction: 0.530189497958225
+energy: 0.5328539465450952
+difference: 0.002664448586870205
+7.8 percent done, k=7, distance=9.246231155778894
+Prediction: 0.530167044593316
+energy: 0.5331282328114852
+difference: 0.002961188218169264
+8.29 percent done, k=7, distance=9.195979899497488
+Prediction: 0.5301413775008458
+energy: 0.5334054648985491
+difference: 0.0032640873977033413
+8.78 percent done, k=7, distance=9.14572864321608
+Prediction: 0.5301123966364727
+energy: 0.5336856909449282
+difference: 0.0035732943084555435
+9.27 percent done, k=7, distance=9.095477386934673
+Prediction: 0.5300799987201696
+energy: 0.5339689601523788
+difference: 0.0038889614322091814
+9.76 percent done, k=7, distance=9.045226130653266
+Prediction: 0.5300440772156627
+energy: 0.5342553228154971
+difference: 0.0042112455998344345
+10.24 percent done, k=7, distance=8.99497487437186
+Prediction: 0.5300045217091415
+energy: 0.5345448303524453
+difference: 0.004540308643303792
+10.73 percent done, k=7, distance=8.944723618090451
+Prediction: 0.5299612187820919
+energy: 0.5348375353367218
+difference: 0.004876316554629945
+11.22 percent done, k=7, distance=8.894472361809045
+Prediction: 0.529914050874461
+energy: 0.5351334915300197
+difference: 0.0052194406555586825
+11.71 percent done, k=7, distance=8.844221105527637
+Prediction: 0.5298628966468358
+energy: 0.5354327539162169
+difference: 0.005569857269381084
+12.2 percent done, k=7, distance=8.793969849246231
+Prediction: 0.5298076307367475
+energy: 0.5357353787365422
+difference: 0.005927747999794675
+12.68 percent done, k=7, distance=8.743718592964823
+Prediction: 0.5297481235974438
+energy: 0.5360414235259738
+difference: 0.006293299928530005
+13.17 percent done, k=7, distance=8.693467336683417
+Prediction: 0.5296842413512218
+energy: 0.5363509471508983
+difference: 0.006666705799676431
+13.66 percent done, k=7, distance=8.64321608040201
+Prediction: 0.52961584562164
+energy: 0.5366640098480985
+difference: 0.0070481642264584865
+14.15 percent done, k=7, distance=8.592964824120603
+Prediction: 0.5295427935164371
+energy: 0.5369806732651229
+difference: 0.007437879748685816
+14.63 percent done, k=7, distance=8.542713567839195
+Prediction: 0.5294649366395673
+energy: 0.5373010005020854
+difference: 0.007836063862518117
+15.12 percent done, k=7, distance=8.492462311557789
+Prediction: 0.5293821227338578
+energy: 0.5376250561549384
+difference: 0.008242933421080623
+15.61 percent done, k=7, distance=8.442211055276381
+Prediction: 0.5292941928545449
+energy: 0.5379529063603354
+difference: 0.008658713505790505
+16.1 percent done, k=7, distance=8.391959798994975
+Prediction: 0.52920098397902
+energy: 0.5382846188420518
+difference: 0.009083634863031764
+16.59 percent done, k=7, distance=8.341708542713567
+Prediction: 0.5291023263881094
+energy: 0.5386202629591076
+difference: 0.009517936570998198
+17.07 percent done, k=7, distance=8.291457286432161
+Prediction: 0.5289980456195923
+energy: 0.5389599097556332
+difference: 0.009961864136040943
+17.56 percent done, k=7, distance=8.241206030150753
+Prediction: 0.5288879594654317
+energy: 0.5393036320124939
+difference: 0.010415672547062216
+18.05 percent done, k=7, distance=8.190954773869347
+Prediction: 0.528771881283217
+energy: 0.5396515043008535
+difference: 0.010879623017636564
+18.54 percent done, k=7, distance=8.140703517587939
+Prediction: 0.5286496160956369
+energy: 0.5400036030376246
+difference: 0.011353986941987748
+19.02 percent done, k=7, distance=8.090452261306533
+Prediction: 0.5285209630524688
+energy: 0.5403600065428855
+difference: 0.011839043490416756
+19.51 percent done, k=7, distance=8.040201005025125
+Prediction: 0.5283857139135111
+energy: 0.5407207950995201
+difference: 0.012335081186009011
+20.0 percent done, k=7, distance=7.989949748743719
+Prediction: 0.5282436529759978
+energy: 0.5410860510148122
+difference: 0.012842398038814373
+20.49 percent done, k=7, distance=7.939698492462311
+Prediction: 0.5280945571541696
+energy: 0.54145585868438
+difference: 0.013361301530210312
+20.98 percent done, k=7, distance=7.889447236180905
+Prediction: 0.5279381940304189
+energy: 0.541830304658327
+difference: 0.013892110627908183
+21.46 percent done, k=7, distance=7.839195979899497
+Prediction: 0.5277743250388394
+energy: 0.5422094777097514
+difference: 0.014435152670912
+21.95 percent done, k=7, distance=7.788944723618091
+Prediction: 0.5276027002951273
+energy: 0.5425934689055246
+difference: 0.014990768610397276
+22.44 percent done, k=7, distance=7.738693467336683
+Prediction: 0.5274230631861996
+energy: 0.5429823716798031
+difference: 0.01555930849360354
+22.93 percent done, k=7, distance=7.688442211055277
+Prediction: 0.5272351463091244
+energy: 0.5433762819096026
+difference: 0.01614113560047825
+23.41 percent done, k=7, distance=7.638190954773869
+Prediction: 0.5270386731702319
+energy: 0.5437752979931886
+difference: 0.01673662482295668
+23.9 percent done, k=7, distance=7.5879396984924625
+Prediction: 0.5268333555284873
+energy: 0.5441795209308365
+difference: 0.017346165402349234
+24.39 percent done, k=7, distance=7.537688442211055
+Prediction: 0.526618896822441
+energy: 0.5445890544081581
+difference: 0.017970157585717073
+24.88 percent done, k=7, distance=7.4874371859296485
+Prediction: 0.5263949879234934
+energy: 0.5450040048818935
+difference: 0.018609016958400115
+25.37 percent done, k=7, distance=7.4371859296482405
+Prediction: 0.5261613086169293
+energy: 0.5454244816681693
+difference: 0.019263173051239924
+25.85 percent done, k=7, distance=7.386934673366834
+Prediction: 0.5259175267358072
+energy: 0.5458505970331264
+difference: 0.019933070297319277
+26.34 percent done, k=7, distance=7.3366834170854265
+Prediction: 0.525663297823346
+energy: 0.5462824662858389
+difference: 0.0206191684624929
+energy plus: 0.9142860696204707
+plus difference: 0.3886227717971247
+energy minus: 0.5747079576964447
+minus difference: 0.049044659873098695
+energy plus: 0.9141095719491453
+plus difference: 0.38844627412579935
+energy minus: 0.5747042401154614
+minus difference: 0.04904094229211542
+energy plus: 0.5540910315892724
+plus difference: 0.028427733765926444
+energy minus: 1.0092472313007927
+minus difference: 0.48358393347744677
