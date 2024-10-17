@@ -15,15 +15,17 @@ import scipy as sp
 #sensitivity is how sensitive the double excitation finder is.
 #limit is how many excited states are searched before it gives up.
 #distancelist defines the x space
-#fitfunc is the function used for the energy fitting
+#predictiondatapoints is the number of previous datapoints used to predict the next energy
+#fitfunc is the function used for the energy prediction
 #-------------------
 potentialchoice = "gaussian"
 sensitivity = 20
 limit = 50
 distancelist = np.concatenate((np.linspace(20,10,61), np.linspace(10,0,200), np.zeros(5)))
-tolerance = 0.01
+tolerance = 0.02
+predictiondatapoints = 4
 def fitfunc(x,a,b):
-    return ((a*x)+b)
+    return ((a*x)+b) #linear
 
 
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -58,8 +60,8 @@ def getpotential(potential, distance):
         x = np.linspace(-60,60,150)
         v_ext = -0.49*np.exp(-1e-3*(x+40)**4) -0.5*np.exp(-1e-3*(x-40)**4)
     elif potential == "gaussian":
-        x = np.linspace(-30,30,150)
-        v_ext=-2*np.exp(-((x-distance)**2)/10) - 2.005*np.exp(-((x+distance)**2)/10)
+        x = np.linspace(-30,30,300)
+        v_ext=-4*np.exp(-((x-distance)**2)/10) - 4.005*np.exp(-((x+distance)**2)/10)
     elif potential == "ISW":
         x = np.linspace(-30, 30, 180)
         v_ext = np.concatenate((np.full(16,100),np.full(29,0.01),np.full(90,100),np.full(30,0),np.full(15,100)))
@@ -106,8 +108,8 @@ def finddoubleexcitation():
 #predicting the next energy
 def energy_prediction(distancelist,energies):
     #make arrays the same size
-    pred_distancelist = distancelist[len(energies)-4:len(energies)]
-    pred_energies = energies[len(energies)-4:len(energies)]
+    pred_distancelist = distancelist[len(energies)-predictiondatapoints:len(energies)]
+    pred_energies = energies[len(energies)-predictiondatapoints:len(energies)]
 
     #apply curve fit
     fit, useless = sp.optimize.curve_fit(fitfunc, pred_distancelist, pred_energies)
@@ -150,7 +152,7 @@ def moveelectrons(distancelist):
         else:
             energyprediction = energy
 
-        #If the energy is not within the tolerance, try the two states either side
+        #If the energy is not within the tolerance, try the states either side
     
         if (abs(energy-energyprediction) > tolerance):
             found = False
