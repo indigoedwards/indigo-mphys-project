@@ -8,6 +8,7 @@ import contextlib
 from PIL import Image
 import scipy as sp
 import datetime
+from tqdm import tqdm
 
 #This program is used to find an excited state for a specific potential, then move the excited state closer to form a many body excited state
 
@@ -24,7 +25,7 @@ sensitivity = 20
 limit = 50
 predictiondatapoints = 4
 distancelist = np.concatenate((np.linspace(10,0,200), np.zeros(5)))
-tolerance = 0.02
+tolerance = 0.01
 def fitfunc(x,a,b):
     return ((a*x)+b) #linear
 
@@ -114,6 +115,7 @@ def finddoubleexcitation():
         raise Exception("No double excitations found up to the 50th excited state")
 #------------------------------------------------------------------------------------------------
 #predicting the next energy
+""""
 def energy_prediction(distancelist,energies):
     #make arrays the same size
     pred_distancelist = distancelist[len(energies)-predictiondatapoints:len(energies)]
@@ -124,6 +126,15 @@ def energy_prediction(distancelist,energies):
     
     #return prediction for the next distance value
     return (fitfunc(distancelist[len(pred_distancelist)+1],*fit))
+"""
+#--------------------------------------------------------------------------------------------------
+#are the states the same? Using inner product
+def same_state(state1,state2,system):
+    innerproduct = np.sum(abs(state1)*abs(state2))*system.dx**system.count
+    if (abs(innerproduct-1) < tolerance):
+        return True
+    else:
+        return False
 
 #-----------------------------------------------------------------------------------------------
 def findenergy(system, solvedsystem):
@@ -133,70 +144,57 @@ def findenergy(system, solvedsystem):
     return energy,charge_density
 
 
-
+#--------------------------------------------------------------------------------------------------
 #Moves the electrons closer to eachother
 def moveelectrons(distancelist):
     energies = []
+    states = np.array([0,0])
     excitation = finddoubleexcitation()
     writetooutput("Generating movement")
     #cycle through distances
-    for distance in distancelist:
-        #define and solve system
+    for distance in tqdm(distancelist):
+        #define system
         x = getpotential(potentialchoice,distance)[0]
         v_ext = getpotential(potentialchoice,distance)[1]
         v_int = idea.interactions.softened_interaction(x)
         system = idea.system.System(x,v_ext,v_int,electrons="uu")
         
+        #solve system
+        blockPrint()
+        newstate = idea.methods.interacting.solve(system,k=excitation)
+        enablePrint()
+        states = np.insert(states[0:-1], 0, newstate)
 
-
-        blockPrint()           
-        solvedsystem = idea.methods.interacting.solve(system, k=excitation)
-        enablePrint()       
-        energy = findenergy(system, solvedsystem)[0]
-
-        #only check if more than 5 iterations in
-        if (np.where(distancelist==distance)[0][0]>5):
-            energyprediction = energy_prediction(distancelist,energies)
+        #check if the new state is the same as the old state
+        samestate = False
+        if (np.where(distancelist==distance)[0][0]>1):
+            samestate = same_state(states[0],states[1],system)
         else:
-            energyprediction = energy
-    
-        #If the energy is not within the tolerance, try the two states either side
-        writetooutput(f"Prediction: {energyprediction}")
-        writetooutput(f"energy: {energy}")
-        writetooutput(f"difference: {abs(energy-energyprediction)}")
-        if (abs(energy-energyprediction) > tolerance):
-            found = False
-            n=1
-            while found == False:
-                solvedsystem_plus = idea.methods.interacting.solve(system, k=excitation+n)
-                energy_plus = findenergy(system,solvedsystem_plus)[0]
-                solvedsystem_minus = idea.methods.interacting.solve(system, k=excitation-n)
-                energy_minus = findenergy(system,solvedsystem_minus)[0]
-                
-                writetooutput(f"energy plus: {energy_plus}")
-                writetooutput(f"plus difference: {abs(energy_plus-energyprediction)}")
-                writetooutput(f"energy minus: {energy_minus}")
-                writetooutput(f"minus difference: {abs(energy_minus-energyprediction)}")
-                if (abs(energy_plus-energyprediction) < tolerance and abs(energy_minus-energyprediction) > abs(energy_plus-energyprediction)):
-                    acceptedenergy = energy_plus
-                    excitation = excitation + n
-                    accepteddensity = findenergy(system,solvedsystem_plus)[1]
-                    found = True
-                elif (abs(energy_minus-energyprediction) <tolerance):
-                    acceptedenergy = energy_minus
-                    excitation = excitation -n
-                    found = True
-                    accepteddensity = findenergy(system,solvedsystem_minus)[1]
+            samestate = True
+
+        #if they are not the same, check the states around it
+        n = 1
+        while samestate == False:
+            blockPrint()
+            plusstate = idea.methods.interacting.solve(system,k=excitation+n)
+            plusstatus = same_state(plusstate, states[1],system)
+            minusstate = idea.methods.interacting.solve(system,k=excitation-n)
+            minusstatus = same_state(minusstate, states[1],system)
+            enablePrint()
+            if plusstatus == True:
+                excitation = excitation + n
+                states[0] = plusstate
+            elif minusstatus == True:
+                excitation = excitation - n
+                states[0] = minusstate
+            else:
+                if (n<3):
+                    n = n + 1
                 else:
-                    if (n < 3):
-                        n = n + 1
-                    else:
-                        raise Exception("Double excitation state cannot be found within 3 either side")            
-        else:
-            acceptedenergy = energy
-            accepteddensity = findenergy(system,solvedsystem)[1]
+                    raise Exception("No correct states found in the 6 surrounding excitations")
 
-        energies.append(acceptedenergy)
+
+        energies.append(findenergy(system,states[0]))
 
         writetooutput(f"{round((float(np.where(distancelist==distance)[0][0]+1)/float((len(distancelist))))*100,2)} percent done, k={excitation}, distance={distance}")
         #create and save density plots
