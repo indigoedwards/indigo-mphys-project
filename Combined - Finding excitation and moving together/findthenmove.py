@@ -144,11 +144,11 @@ def findenergy(system, solvedsystem):
     return energy,charge_density
 
 
+
 #--------------------------------------------------------------------------------------------------
 #Moves the electrons closer to eachother
 def moveelectrons(distancelist):
     energies = []
-    states = np.array([0,0])
     excitation = finddoubleexcitation()
     writetooutput("Generating movement")
     #cycle through distances
@@ -159,16 +159,18 @@ def moveelectrons(distancelist):
         v_int = idea.interactions.softened_interaction(x)
         system = idea.system.System(x,v_ext,v_int,electrons="uu")
         
+        #make room for new state
+        laststate = newstate
+
         #solve system
         blockPrint()
         newstate = idea.methods.interacting.solve(system,k=excitation)
         enablePrint()
-        states = np.insert(states[0:-1], 0, newstate)
 
         #check if the new state is the same as the old state
         samestate = False
         if (np.where(distancelist==distance)[0][0]>1):
-            samestate = same_state(states[0],states[1],system)
+            samestate = same_state(newstate,laststate,system)
         else:
             samestate = True
 
@@ -177,16 +179,16 @@ def moveelectrons(distancelist):
         while samestate == False:
             blockPrint()
             plusstate = idea.methods.interacting.solve(system,k=excitation+n)
-            plusstatus = same_state(plusstate, states[1],system)
+            plusstatus = same_state(plusstate, laststate,system)
             minusstate = idea.methods.interacting.solve(system,k=excitation-n)
-            minusstatus = same_state(minusstate, states[1],system)
+            minusstatus = same_state(minusstate, laststate,system)
             enablePrint()
             if plusstatus == True:
                 excitation = excitation + n
-                states[0] = plusstate
+                newstate = plusstate
             elif minusstatus == True:
                 excitation = excitation - n
-                states[0] = minusstate
+                newstate = minusstate
             else:
                 if (n<3):
                     n = n + 1
@@ -194,11 +196,11 @@ def moveelectrons(distancelist):
                     raise Exception("No correct states found in the 6 surrounding excitations")
 
 
-        energies.append(findenergy(system,states[0]))
+        energies.append(findenergy(system,newstate)[0])
 
         writetooutput(f"{round((float(np.where(distancelist==distance)[0][0]+1)/float((len(distancelist))))*100,2)} percent done, k={excitation}, distance={distance}")
         #create and save density plots
-        plt.plot(system.x, accepteddensity, "m-", label="Prob. Density")
+        plt.plot(system.x, findenergy(system,newstate)[1]), "m-", label="Prob. Density")
         plt.plot(system.x, v_ext, "g--", label="Potential")
         plt.xlabel("x")
         plt.ylabel("v_ext / prob. density")
@@ -208,7 +210,7 @@ def moveelectrons(distancelist):
         plt.close()
 
         #create and save wavefunction plots
-        plt.imshow(solvedsystem.space.real, cmap="seismic", vmax=0.75, vmin=-0.75)
+        plt.imshow(newstate.space.real, cmap="seismic", vmax=0.75, vmin=-0.75)
         plt.xlabel("x")
         plt.ylabel("x'")
         plt.gca().invert_yaxis()
