@@ -24,7 +24,7 @@ potentialchoice = "gaussian"
 sensitivity = 20
 limit = 50
 predictiondatapoints = 4
-distancelist = np.concatenate((np.linspace(10,0,50), np.zeros(5)))
+distancelist = np.concatenate((np.linspace(7,0,29), np.zeros(5)))
 tolerance = 0.1
 def fitfunc(x,a,b):
     return ((a*x)+b) #linear
@@ -184,8 +184,10 @@ def moveelectrons(distancelist):
             blockPrint()
             plusstate = idea.methods.interacting.solve(system,k=excitation+n)
             plusstatus = same_state(plusstate, laststate,system)
+            writetooutput(f"plus state: {plusstatus}")
             minusstate = idea.methods.interacting.solve(system,k=excitation-n)
             minusstatus = same_state(minusstate, laststate,system)
+            writetooutput(f"minus state: {minusstatus}")
             enablePrint()
             if plusstatus == True:
                 excitation = excitation + n
