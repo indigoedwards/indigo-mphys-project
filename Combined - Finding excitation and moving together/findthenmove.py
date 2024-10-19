@@ -24,7 +24,7 @@ potentialchoice = "gaussian"
 sensitivity = 20
 limit = 50
 predictiondatapoints = 4
-distancelist = np.concatenate((np.linspace(10,0,200), np.zeros(5)))
+distancelist = np.concatenate((np.linspace(10,0,50), np.zeros(5)))
 tolerance = 0.1
 def fitfunc(x,a,b):
     return ((a*x)+b) #linear
@@ -131,6 +131,7 @@ def energy_prediction(distancelist,energies):
 #are the states the same? Using inner product
 def same_state(state1,state2,system):
     innerproduct = np.sum(abs(state1.space.real)*abs(state2.space.real))*system.dx**system.count
+    writetooutput(f"inner product: {innerproduct}")
     if (abs(innerproduct-1) < tolerance):
         return True
     else:
