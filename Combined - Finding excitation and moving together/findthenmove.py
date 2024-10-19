@@ -151,7 +151,8 @@ def findenergy(system, solvedsystem):
 def moveelectrons(distancelist):
     print("generating movement")
     energies = []
-    excitation = finddoubleexcitation()
+    #excitation = finddoubleexcitation()
+    excitation = 7
     #cycle through distances
     for distance in distancelist:
         #define system

@@ -554,3 +554,92 @@ Double excitation not found, checking surrounding states
 Double excitation not found, checking surrounding states
 Double excitation not found, checking surrounding states
 No correct states found in the 6 surrounding excitations, distance = 4.271356783919598
+-----------------------------------------------------------
+===BEGIN PROGRAM 2024-10-19 15:22:46.832139===
+Finding double excitation
+Searched k=0, continuing...
+Searched k=1, continuing...
+Searched k=2, continuing...
+Searched k=3, continuing...
+-----------------------------------------------------------
+===BEGIN PROGRAM 2024-10-19 15:23:49.342215===
+Searched k=4, continuing...
+-----------------------------------------------------------
+===BEGIN PROGRAM 2024-10-19 15:24:41.230970===
+2024-10-19 15:25:39.566377:      1.82 %, k=7, distance=10.0
+inner product: 0.9849549503983284
+2024-10-19 15:26:43.279967:      3.64 %, k=7, distance=9.795918367346939
+inner product: 0.9849549503982039
+2024-10-19 15:27:39.527916:      5.45 %, k=7, distance=9.591836734693878
+inner product: 0.9849549503977778
+2024-10-19 15:28:36.039435:      7.27 %, k=7, distance=9.387755102040817
+inner product: 0.9849549503963364
+2024-10-19 15:29:31.245807:      9.09 %, k=7, distance=9.183673469387756
+inner product: 0.9849549503916645
+2024-10-19 15:30:24.934415:      10.91 %, k=7, distance=8.979591836734693
+inner product: 0.9849549503768834
+2024-10-19 15:31:16.446577:      12.73 %, k=7, distance=8.775510204081632
+inner product: 0.984954950331451
+2024-10-19 15:32:03.706460:      14.55 %, k=7, distance=8.571428571428571
+inner product: 0.9849549501958745
+2024-10-19 15:32:54.367944:      16.36 %, k=7, distance=8.36734693877551
+inner product: 0.9849549498030417
+2024-10-19 15:33:45.082559:      18.18 %, k=7, distance=8.16326530612245
+inner product: 0.9849549486982815
+2024-10-19 15:34:39.317436:      20.0 %, k=7, distance=7.959183673469388
+inner product: 0.9849549456834321
+2024-10-19 15:35:31.471196:      21.82 %, k=7, distance=7.755102040816326
+inner product: 0.9849549377022105
+2024-10-19 15:36:26.313167:      23.64 %, k=7, distance=7.551020408163265
+inner product: 0.9849549172112676
+2024-10-19 15:37:29.269442:      25.45 %, k=7, distance=7.346938775510204
+inner product: 0.984954866205589
+2024-10-19 15:38:26.702630:      27.27 %, k=7, distance=7.142857142857142
+inner product: 0.9849547431460202
+2024-10-19 15:39:20.824343:      29.09 %, k=7, distance=6.938775510204081
+inner product: 0.9849544554537848
+2024-10-19 15:40:12.242467:      30.91 %, k=7, distance=6.73469387755102
+inner product: 0.9849538039220971
+2024-10-19 15:41:04.615289:      32.73 %, k=7, distance=6.530612244897959
+inner product: 0.9849523749448507
+2024-10-19 15:41:54.846113:      34.55 %, k=7, distance=6.326530612244898
+inner product: 0.984949340317733
+2024-10-19 15:42:44.978309:      36.36 %, k=7, distance=6.122448979591836
+inner product: 0.9849431012084738
+2024-10-19 15:43:34.475762:      38.18 %, k=7, distance=5.918367346938775
+inner product: 0.9849306819984179
+2024-10-19 15:44:29.783785:      40.0 %, k=7, distance=5.714285714285714
+inner product: 0.9849067403666111
+2024-10-19 15:45:29.077716:      41.82 %, k=7, distance=5.5102040816326525
+inner product: 0.9848620077782138
+2024-10-19 15:46:26.909958:      43.64 %, k=7, distance=5.3061224489795915
+inner product: 0.9847808898608235
+2024-10-19 15:47:24.765581:      45.45 %, k=7, distance=5.1020408163265305
+inner product: 0.9846377758944186
+2024-10-19 15:48:10.679687:      47.27 %, k=7, distance=4.8979591836734695
+inner product: 0.9843911525061243
+2024-10-19 15:49:04.452460:      49.09 %, k=7, distance=4.6938775510204085
+inner product: 0.9839733782015893
+2024-10-19 15:50:03.866751:      50.91 %, k=7, distance=4.489795918367347
+inner product: 0.9832702985841131
+2024-10-19 15:51:01.111029:      52.73 %, k=7, distance=4.285714285714286
+inner product: 0.0014775866209189381
+Double excitation not found, checking surrounding states
+inner product: 0.003535513316169933
+inner product: 0.9820725513453972
+Double excitation not found, checking surrounding states
+inner product: 0.001477586622023074
+inner product: 0.9820725513453955
+Double excitation not found, checking surrounding states
+inner product: 0.9820725513453993
+inner product: 4.053344646578286e-05
+Double excitation not found, checking surrounding states
+inner product: 0.04236655970853475
+inner product: 4.0533443395290495e-05
+Double excitation not found, checking surrounding states
+inner product: 0.04236655970859283
+inner product: 0.004358425021294569
+Double excitation not found, checking surrounding states
+inner product: 0.0035355133161904906
+inner product: 0.0035800995206011505
+No correct states found in the 6 surrounding excitations, distance = 4.081632653061225
