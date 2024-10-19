@@ -291,3 +291,266 @@ Searched k=5, continuing...
 Searched k=6, continuing...
 Double excitation found in the 7th excited state.
 Generating movement
+-----------------------------------------------------------
+===BEGIN PROGRAM 2024-10-19 00:30:30.938447===
+Finding doauble excitation
+Searched k=0, continuing...
+Searched k=1, continuing...
+Searched k=2, continuing...
+Searched k=3, continuing...
+Searched k=4, continuing...
+Searched k=5, continuing...
+Searched k=6, continuing...
+Double excitation found in the 7th excited state.
+Generating movement
+-----------------------------------------------------------
+===BEGIN PROGRAM 2024-10-19 09:00:42.436113===
+Finding doauble excitation
+Searched k=0, continuing...
+Searched k=1, continuing...
+Searched k=2, continuing...
+Searched k=3, continuing...
+Searched k=4, continuing...
+Searched k=5, continuing...
+Searched k=6, continuing...
+Double excitation found in the 7th excited state.
+Generating movement
+-----------------------------------------------------------
+===BEGIN PROGRAM 2024-10-19 09:07:09.312392===
+Finding doauble excitation
+Searched k=0, continuing...
+Searched k=1, continuing...
+Searched k=2, continuing...
+Searched k=3, continuing...
+Searched k=4, continuing...
+Searched k=5, continuing...
+Searched k=6, continuing...
+Double excitation found in the 7th excited state.
+Generating movement
+-----------------------------------------------------------
+===BEGIN PROGRAM 2024-10-19 09:14:36.812814===
+Finding doauble excitation
+Searched k=0, continuing...
+Searched k=1, continuing...
+Searched k=2, continuing...
+Searched k=3, continuing...
+Searched k=4, continuing...
+Searched k=5, continuing...
+Searched k=6, continuing...
+Double excitation found in the 7th excited state.
+Generating movement
+0.49 percent done, k=7, distance=10.0
+-----------------------------------------------------------
+===BEGIN PROGRAM 2024-10-19 09:23:08.274530===
+Finding doauble excitation
+Searched k=0, continuing...
+Searched k=1, continuing...
+Searched k=2, continuing...
+Searched k=3, continuing...
+Searched k=4, continuing...
+Searched k=5, continuing...
+Searched k=6, continuing...
+Double excitation found in the 7th excited state.
+0.49 percent done, k=7, distance=10.0
+0.98 percent done, k=7, distance=9.949748743718592
+1.46 percent done, k=7, distance=9.899497487437186
+1.95 percent done, k=7, distance=9.849246231155778
+2.44 percent done, k=7, distance=9.798994974874372
+2.93 percent done, k=7, distance=9.748743718592964
+3.41 percent done, k=7, distance=9.698492462311558
+3.9 percent done, k=7, distance=9.64824120603015
+4.39 percent done, k=7, distance=9.597989949748744
+4.88 percent done, k=7, distance=9.547738693467336
+5.37 percent done, k=7, distance=9.49748743718593
+5.85 percent done, k=7, distance=9.447236180904522
+6.34 percent done, k=7, distance=9.396984924623116
+6.83 percent done, k=7, distance=9.346733668341708
+7.32 percent done, k=7, distance=9.296482412060302
+7.8 percent done, k=7, distance=9.246231155778894
+8.29 percent done, k=7, distance=9.195979899497488
+8.78 percent done, k=7, distance=9.14572864321608
+9.27 percent done, k=7, distance=9.095477386934673
+9.76 percent done, k=7, distance=9.045226130653266
+10.24 percent done, k=7, distance=8.99497487437186
+10.73 percent done, k=7, distance=8.944723618090451
+11.22 percent done, k=7, distance=8.894472361809045
+11.71 percent done, k=7, distance=8.844221105527637
+12.2 percent done, k=7, distance=8.793969849246231
+12.68 percent done, k=7, distance=8.743718592964823
+13.17 percent done, k=7, distance=8.693467336683417
+13.66 percent done, k=7, distance=8.64321608040201
+14.15 percent done, k=7, distance=8.592964824120603
+14.63 percent done, k=7, distance=8.542713567839195
+15.12 percent done, k=7, distance=8.492462311557789
+15.61 percent done, k=7, distance=8.442211055276381
+16.1 percent done, k=7, distance=8.391959798994975
+16.59 percent done, k=7, distance=8.341708542713567
+17.07 percent done, k=7, distance=8.291457286432161
+17.56 percent done, k=7, distance=8.241206030150753
+18.05 percent done, k=7, distance=8.190954773869347
+18.54 percent done, k=7, distance=8.140703517587939
+19.02 percent done, k=7, distance=8.090452261306533
+19.51 percent done, k=7, distance=8.040201005025125
+20.0 percent done, k=7, distance=7.989949748743719
+20.49 percent done, k=7, distance=7.939698492462311
+20.98 percent done, k=7, distance=7.889447236180905
+21.46 percent done, k=7, distance=7.839195979899497
+21.95 percent done, k=7, distance=7.788944723618091
+22.44 percent done, k=7, distance=7.738693467336683
+22.93 percent done, k=7, distance=7.688442211055277
+-----------------------------------------------------------
+===BEGIN PROGRAM 2024-10-19 11:57:39.013920===
+Finding doauble excitation
+Searched k=0, continuing...
+Searched k=1, continuing...
+Searched k=2, continuing...
+Searched k=3, continuing...
+Searched k=4, continuing...
+Searched k=5, continuing...
+Searched k=6, continuing...
+Double excitation found in the 7th excited state.
+2024-10-19 12:02:10.978092:0.49 %, k=7, distance=10.0
+2024-10-19 12:03:01.479187:0.98 %, k=7, distance=9.949748743718592
+2024-10-19 12:03:50.272975:1.46 %, k=7, distance=9.899497487437186
+2024-10-19 12:04:41.740535:1.95 %, k=7, distance=9.849246231155778
+2024-10-19 12:05:34.726882:2.44 %, k=7, distance=9.798994974874372
+2024-10-19 12:06:25.298186:2.93 %, k=7, distance=9.748743718592964
+2024-10-19 12:07:17.460541:3.41 %, k=7, distance=9.698492462311558
+2024-10-19 12:08:09.811583:3.9 %, k=7, distance=9.64824120603015
+-----------------------------------------------------------
+===BEGIN PROGRAM 2024-10-19 12:10:00.389827===
+Finding doauble excitation
+-----------------------------------------------------------
+===BEGIN PROGRAM 2024-10-19 12:10:05.866925===
+Finding doauble excitation
+Searched k=0, continuing...
+Searched k=1, continuing...
+-----------------------------------------------------------
+===BEGIN PROGRAM 2024-10-19 12:11:06.117738===
+Finding double excitation
+Searched k=0, continuing...
+Searched k=1, continuing...
+Searched k=2, continuing...
+Searched k=3, continuing...
+Searched k=4, continuing...
+Searched k=5, continuing...
+Searched k=6, continuing...
+Double excitation found in the 7th excited state.
+2024-10-19 12:15:35.132413:      0.49 %, k=7, distance=10.0
+2024-10-19 12:16:24.409101:      0.98 %, k=7, distance=9.949748743718592
+2024-10-19 12:17:15.130937:      1.46 %, k=7, distance=9.899497487437186
+2024-10-19 12:18:05.287279:      1.95 %, k=7, distance=9.849246231155778
+2024-10-19 12:18:56.695374:      2.44 %, k=7, distance=9.798994974874372
+2024-10-19 12:19:48.233269:      2.93 %, k=7, distance=9.748743718592964
+2024-10-19 12:20:39.158071:      3.41 %, k=7, distance=9.698492462311558
+2024-10-19 12:21:30.160011:      3.9 %, k=7, distance=9.64824120603015
+2024-10-19 12:22:19.218501:      4.39 %, k=7, distance=9.597989949748744
+2024-10-19 12:23:08.817854:      4.88 %, k=7, distance=9.547738693467336
+2024-10-19 12:23:59.330368:      5.37 %, k=7, distance=9.49748743718593
+2024-10-19 12:24:51.411953:      5.85 %, k=7, distance=9.447236180904522
+2024-10-19 12:25:41.519121:      6.34 %, k=7, distance=9.396984924623116
+2024-10-19 12:26:32.282476:      6.83 %, k=7, distance=9.346733668341708
+2024-10-19 12:27:23.400532:      7.32 %, k=7, distance=9.296482412060302
+2024-10-19 12:28:12.660698:      7.8 %, k=7, distance=9.246231155778894
+2024-10-19 12:29:05.352533:      8.29 %, k=7, distance=9.195979899497488
+2024-10-19 12:30:02.699395:      8.78 %, k=7, distance=9.14572864321608
+2024-10-19 12:30:59.095759:      9.27 %, k=7, distance=9.095477386934673
+2024-10-19 12:31:58.213377:      9.76 %, k=7, distance=9.045226130653266
+2024-10-19 12:32:51.315333:      10.24 %, k=7, distance=8.99497487437186
+2024-10-19 12:33:51.439920:      10.73 %, k=7, distance=8.944723618090451
+2024-10-19 12:34:52.266724:      11.22 %, k=7, distance=8.894472361809045
+2024-10-19 12:35:52.952930:      11.71 %, k=7, distance=8.844221105527637
+2024-10-19 12:36:49.776681:      12.2 %, k=7, distance=8.793969849246231
+2024-10-19 12:37:40.907951:      12.68 %, k=7, distance=8.743718592964823
+2024-10-19 12:38:38.159703:      13.17 %, k=7, distance=8.693467336683417
+2024-10-19 12:39:29.619141:      13.66 %, k=7, distance=8.64321608040201
+2024-10-19 12:40:29.594062:      14.15 %, k=7, distance=8.592964824120603
+2024-10-19 12:41:31.386208:      14.63 %, k=7, distance=8.542713567839195
+2024-10-19 12:42:32.497438:      15.12 %, k=7, distance=8.492462311557789
+2024-10-19 12:43:33.049928:      15.61 %, k=7, distance=8.442211055276381
+2024-10-19 12:44:34.963604:      16.1 %, k=7, distance=8.391959798994975
+2024-10-19 12:45:33.409604:      16.59 %, k=7, distance=8.341708542713567
+2024-10-19 12:46:34.471318:      17.07 %, k=7, distance=8.291457286432161
+2024-10-19 12:47:42.636314:      17.56 %, k=7, distance=8.241206030150753
+2024-10-19 12:48:45.170324:      18.05 %, k=7, distance=8.190954773869347
+2024-10-19 12:49:48.736391:      18.54 %, k=7, distance=8.140703517587939
+2024-10-19 12:50:53.023373:      19.02 %, k=7, distance=8.090452261306533
+2024-10-19 12:51:56.576725:      19.51 %, k=7, distance=8.040201005025125
+2024-10-19 12:52:56.226980:      20.0 %, k=7, distance=7.989949748743719
+2024-10-19 12:53:58.131592:      20.49 %, k=7, distance=7.939698492462311
+2024-10-19 12:54:56.946548:      20.98 %, k=7, distance=7.889447236180905
+2024-10-19 12:55:54.327100:      21.46 %, k=7, distance=7.839195979899497
+2024-10-19 12:56:50.549314:      21.95 %, k=7, distance=7.788944723618091
+2024-10-19 12:57:43.035262:      22.44 %, k=7, distance=7.738693467336683
+2024-10-19 12:58:37.770201:      22.93 %, k=7, distance=7.688442211055277
+2024-10-19 12:59:29.013285:      23.41 %, k=7, distance=7.638190954773869
+2024-10-19 13:00:20.128307:      23.9 %, k=7, distance=7.5879396984924625
+2024-10-19 13:01:10.627885:      24.39 %, k=7, distance=7.537688442211055
+2024-10-19 13:02:03.297791:      24.88 %, k=7, distance=7.4874371859296485
+2024-10-19 13:02:51.933465:      25.37 %, k=7, distance=7.4371859296482405
+2024-10-19 13:03:41.499199:      25.85 %, k=7, distance=7.386934673366834
+2024-10-19 13:04:32.868327:      26.34 %, k=7, distance=7.3366834170854265
+2024-10-19 13:05:23.077169:      26.83 %, k=7, distance=7.28643216080402
+2024-10-19 13:06:16.043828:      27.32 %, k=7, distance=7.236180904522612
+2024-10-19 13:07:05.294137:      27.8 %, k=7, distance=7.185929648241206
+2024-10-19 13:07:55.871970:      28.29 %, k=7, distance=7.135678391959798
+2024-10-19 13:08:47.786049:      28.78 %, k=7, distance=7.085427135678392
+2024-10-19 13:09:38.684258:      29.27 %, k=7, distance=7.035175879396984
+2024-10-19 13:10:29.820344:      29.76 %, k=7, distance=6.984924623115578
+2024-10-19 13:11:17.982804:      30.24 %, k=7, distance=6.93467336683417
+2024-10-19 13:12:09.646924:      30.73 %, k=7, distance=6.884422110552764
+2024-10-19 13:13:04.038902:      31.22 %, k=7, distance=6.834170854271356
+2024-10-19 13:13:55.662336:      31.71 %, k=7, distance=6.78391959798995
+2024-10-19 13:14:59.617345:      32.2 %, k=7, distance=6.733668341708542
+2024-10-19 13:15:52.798441:      32.68 %, k=7, distance=6.683417085427136
+2024-10-19 13:16:55.650288:      33.17 %, k=7, distance=6.633165829145728
+2024-10-19 13:17:52.633607:      33.66 %, k=7, distance=6.582914572864322
+2024-10-19 13:18:55.826592:      34.15 %, k=7, distance=6.532663316582914
+2024-10-19 13:19:48.776711:      34.63 %, k=7, distance=6.482412060301508
+2024-10-19 13:20:39.822452:      35.12 %, k=7, distance=6.4321608040201
+2024-10-19 13:21:33.089795:      35.61 %, k=7, distance=6.381909547738694
+2024-10-19 13:22:23.950184:      36.1 %, k=7, distance=6.331658291457286
+2024-10-19 13:23:11.798715:      36.59 %, k=7, distance=6.28140703517588
+2024-10-19 13:24:04.674187:      37.07 %, k=7, distance=6.231155778894472
+2024-10-19 13:24:55.525334:      37.56 %, k=7, distance=6.180904522613066
+2024-10-19 13:25:46.102195:      38.05 %, k=7, distance=6.130653266331658
+2024-10-19 13:26:37.503414:      38.54 %, k=7, distance=6.080402010050252
+2024-10-19 13:27:31.234199:      39.02 %, k=7, distance=6.030150753768844
+2024-10-19 13:28:21.848655:      39.51 %, k=7, distance=5.979899497487437
+2024-10-19 13:29:14.460525:      40.0 %, k=7, distance=5.92964824120603
+2024-10-19 13:30:06.401566:      40.49 %, k=7, distance=5.879396984924623
+2024-10-19 13:30:56.411463:      40.98 %, k=7, distance=5.829145728643216
+2024-10-19 13:31:48.330147:      41.46 %, k=7, distance=5.7788944723618085
+2024-10-19 13:32:38.514966:      41.95 %, k=7, distance=5.7286432160804015
+2024-10-19 13:33:28.457112:      42.44 %, k=7, distance=5.6783919597989945
+2024-10-19 13:34:18.450503:      42.93 %, k=7, distance=5.628140703517587
+2024-10-19 13:35:10.213213:      43.41 %, k=7, distance=5.57788944723618
+2024-10-19 13:36:00.717663:      43.9 %, k=7, distance=5.527638190954773
+2024-10-19 13:36:48.234244:      44.39 %, k=7, distance=5.477386934673366
+2024-10-19 13:37:37.154511:      44.88 %, k=7, distance=5.427135678391959
+2024-10-19 13:38:29.031166:      45.37 %, k=7, distance=5.376884422110552
+2024-10-19 13:39:23.077408:      45.85 %, k=7, distance=5.326633165829145
+2024-10-19 13:40:27.925523:      46.34 %, k=7, distance=5.276381909547738
+2024-10-19 13:41:25.721536:      46.83 %, k=7, distance=5.226130653266331
+2024-10-19 13:42:19.922380:      47.32 %, k=7, distance=5.175879396984924
+2024-10-19 13:43:12.097248:      47.8 %, k=7, distance=5.125628140703517
+2024-10-19 13:44:03.177887:      48.29 %, k=7, distance=5.07537688442211
+2024-10-19 13:44:55.231240:      48.78 %, k=7, distance=5.025125628140703
+2024-10-19 13:45:44.590240:      49.27 %, k=7, distance=4.974874371859296
+2024-10-19 13:46:32.626456:      49.76 %, k=7, distance=4.924623115577889
+2024-10-19 13:47:23.079446:      50.24 %, k=7, distance=4.874371859296482
+2024-10-19 13:48:11.678305:      50.73 %, k=7, distance=4.824120603015075
+2024-10-19 13:49:02.256728:      51.22 %, k=7, distance=4.773869346733668
+2024-10-19 13:49:49.703026:      51.71 %, k=7, distance=4.723618090452261
+2024-10-19 13:50:38.882544:      52.2 %, k=7, distance=4.673366834170854
+2024-10-19 13:51:30.309026:      52.68 %, k=7, distance=4.623115577889447
+2024-10-19 13:52:19.835826:      53.17 %, k=7, distance=4.57286432160804
+2024-10-19 13:53:14.954304:      53.66 %, k=7, distance=4.522613065326633
+2024-10-19 13:54:09.188167:      54.15 %, k=7, distance=4.472361809045226
+2024-10-19 13:54:59.182452:      54.63 %, k=7, distance=4.422110552763819
+2024-10-19 13:55:49.569991:      55.12 %, k=7, distance=4.371859296482412
+2024-10-19 13:56:36.832693:      55.61 %, k=7, distance=4.321608040201005
+Double excitation not found, checking surrounding states
+Double excitation not found, checking surrounding states
+Double excitation not found, checking surrounding states
+No correct states found in the 6 surrounding excitations, distance = 4.271356783919598

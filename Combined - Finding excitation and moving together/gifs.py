@@ -9,7 +9,7 @@ from PIL import Image
 import scipy as sp
 import datetime
 from tqdm import tqdm
-
+"""
 #This program is used to find an excited state for a specific potential, then move the excited state closer to form a many body excited state
 
 #----Parameters----
@@ -115,7 +115,7 @@ def finddoubleexcitation():
         raise Exception("No double excitations found up to the 50th excited state")
 #------------------------------------------------------------------------------------------------
 #predicting the next energy
-""""
+"""
 def energy_prediction(distancelist,energies):
     #make arrays the same size
     pred_distancelist = distancelist[len(energies)-predictiondatapoints:len(energies)]
@@ -227,7 +227,8 @@ def moveelectrons(distancelist):
         plt.xlim(max(distancelist),0)
         plt.savefig(f"c{str(np.where(distancelist==distance)[0][0]).zfill(3)}.png")
         plt.close()
-
+"""
+def main():
     #create gifs from saved plots
     fp_in = "a*.png"
     fp_out = "density.gif"
@@ -265,7 +266,7 @@ def moveelectrons(distancelist):
         img.save(fp=fp_out, format='GIF', append_images=imgs,
                 save_all=True, duration=100, loop=0)
 
-    return energies
+"""
 
 
 #-------------------------------------------------------------------------------------------------------
@@ -282,3 +283,6 @@ writetooutput("Done! :D")
 
 
 #-----------------------------------------------------------------------------------------------
+"""
+
+main()
