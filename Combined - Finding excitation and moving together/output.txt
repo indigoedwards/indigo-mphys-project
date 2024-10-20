@@ -643,3 +643,94 @@ Double excitation not found, checking surrounding states
 inner product: 0.0035355133161904906
 inner product: 0.0035800995206011505
 No correct states found in the 6 surrounding excitations, distance = 4.081632653061225
+-----------------------------------------------------------
+===BEGIN PROGRAM 2024-10-19 16:13:49.866640===
+2024-10-19 16:14:44.626269:      2.94 %, k=7, distance=7.0
+inner product: 0.9775093770458149
+2024-10-19 16:15:35.279188:      5.88 %, k=7, distance=6.75
+inner product: 0.9775082323503715
+2024-10-19 16:16:33.890375:      8.82 %, k=7, distance=6.5
+inner product: 0.9775052476204356
+2024-10-19 16:17:33.434659:      11.76 %, k=7, distance=6.25
+inner product: 0.9774978323881407
+2024-10-19 16:18:25.357315:      14.71 %, k=7, distance=6.0
+inner product: 0.9774802818301334
+2024-10-19 16:19:17.047637:      17.65 %, k=7, distance=5.75
+inner product: 0.9774406954899933
+2024-10-19 16:20:09.806791:      20.59 %, k=7, distance=5.5
+inner product: 0.9773555047003556
+2024-10-19 16:21:00.103481:      23.53 %, k=7, distance=5.25
+inner product: 0.9771801333160185
+2024-10-19 16:21:46.833439:      26.47 %, k=7, distance=5.0
+inner product: 0.9768330749016403
+2024-10-19 16:22:41.176262:      29.41 %, k=7, distance=4.75
+inner product: 0.9761668276549172
+2024-10-19 16:23:37.917635:      32.35 %, k=7, distance=4.5
+inner product: 0.9749054385670797
+2024-10-19 16:24:32.974447:      35.29 %, k=7, distance=4.25
+inner product: 0.0018088256737570257
+Double excitation not found, checking surrounding states
+inner product: 0.0008228565808770109
+plus state: False
+inner product: 0.0018088256725189728
+minus state: False
+Double excitation not found, checking surrounding states
+inner product: 0.0008228565806360813
+plus state: False
+inner product: 0.9724711522944625
+minus state: True
+Double excitation not found, checking surrounding states
+-----------------------------------------------------------
+===BEGIN PROGRAM 2024-10-19 16:30:56.906385===
+2024-10-19 16:31:48.482540:      2.94 %, k=7, distance=7.0
+inner product: 0.9775093770458149
+2024-10-19 16:32:39.477306:      5.88 %, k=7, distance=6.75
+inner product: 0.9775082323503715
+2024-10-19 16:33:29.073499:      8.82 %, k=7, distance=6.5
+inner product: 0.9775052476204356
+2024-10-19 16:34:17.861516:      11.76 %, k=7, distance=6.25
+inner product: 0.9774978323881407
+2024-10-19 16:35:07.140057:      14.71 %, k=7, distance=6.0
+inner product: 0.9774802818301334
+2024-10-19 16:35:55.988056:      17.65 %, k=7, distance=5.75
+inner product: 0.9774406954899933
+2024-10-19 16:36:44.795976:      20.59 %, k=7, distance=5.5
+inner product: 0.9773555047003556
+2024-10-19 16:37:34.219122:      23.53 %, k=7, distance=5.25
+inner product: 0.9771801333160185
+2024-10-19 16:38:22.024383:      26.47 %, k=7, distance=5.0
+inner product: 0.9768330749016403
+2024-10-19 16:39:10.525032:      29.41 %, k=7, distance=4.75
+inner product: 0.9761668276549172
+2024-10-19 16:40:01.638122:      32.35 %, k=7, distance=4.5
+inner product: 0.9749054385670797
+2024-10-19 16:40:50.596214:      35.29 %, k=7, distance=4.25
+inner product: 0.0018088256737570257
+Double excitation not found, checking surrounding states
+inner product: 0.0008228565808770109
+plus state: False
+inner product: 0.0018088256725189728
+minus state: False
+Double excitation not found, checking surrounding states
+inner product: 0.0008228565806360813
+plus state: False
+inner product: 0.9724711522944625
+minus state: True
+2024-10-19 16:45:25.829804:      38.24 %, k=5, distance=4.0
+inner product: 0.00808562567570933
+Double excitation not found, checking surrounding states
+inner product: 0.008085625674129992
+plus state: False
+inner product: 0.0011781408939590796
+minus state: False
+Double excitation not found, checking surrounding states
+inner product: 0.0156250987570555
+plus state: False
+inner product: 0.019651338416149012
+minus state: False
+Double excitation not found, checking surrounding states
+inner product: 0.015625098757071777
+plus state: False
+inner product: 0.01878660990441575
+minus state: False
+No correct states found in the 6 surrounding excitations, distance = 3.75

@@ -192,9 +192,11 @@ def moveelectrons(distancelist):
             if plusstatus == True:
                 excitation = excitation + n
                 newstate = plusstate
+                samestate = True
             elif minusstatus == True:
                 excitation = excitation - n
                 newstate = minusstate
+                samestate = True
             else:
                 if (n<3):
                     n = n + 1
