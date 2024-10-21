@@ -13,16 +13,15 @@ from tqdm import tqdm
 
 
 
-distancelist = np.linspace(7,0,29)
+distancelist = np.linspace(10,0,51)
 
 
 
-output_filename = "output.txt"   
+output_filename = "energylevel-output.txt"   
 potentialchoice = "gaussian"
 sensitivity = 20
 limit = 50
 predictiondatapoints = 4
-distancelist = np.concatenate((np.linspace(7,0,29), np.zeros(5)))
 tolerance = 0.1
 
 
@@ -60,10 +59,10 @@ def findenergy(system, solvedsystem):
     return energy,charge_density
 
 
-excitationlist = np.linspace(0,10,11)
+excitationlist = [0,1,2,3,4,5,6,7,8,9,10]
 energylist = []
 for excitation in excitationlist:
-    energylist = energylist.append([])
+    energylist.append([])
     for distance in distancelist:
         x = getpotential(potentialchoice,distance)[0]
         v_ext = getpotential(potentialchoice,distance)[1]
@@ -73,9 +72,11 @@ for excitation in excitationlist:
         blockPrint()
         state = idea.methods.interacting.solve(system,k=excitation)
         enablePrint()
-        energylist[excitation] = energylist[excitation].append(findenergy(system,state)[0])
+        energylist[excitation].append(findenergy(system,state)[0])
 
-    plt.plot(x,energylist[excitation])
+        writetooutput(f"{datetime.datetime.now()}:      {round((float(np.where(distancelist==distance)[0][0]+1)/float((len(distancelist)*len(excitationlist))))*100,2)} %, k={excitation}, distance={distance}")
+        
+    plt.plot(distancelist,energylist[excitation])
 
 plt.xlabel("Distance")
 plt.ylabel("Hartree Energy")
@@ -83,4 +84,5 @@ plt.xlim(max(distancelist),0)
 plt.savefig("energylevels.png")
 plt.close()
 
-
+writetooutput("")
+writetooutput(energylist)
