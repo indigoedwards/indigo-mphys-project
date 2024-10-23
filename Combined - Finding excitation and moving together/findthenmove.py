@@ -24,7 +24,7 @@ potentialchoice = "gaussian"
 sensitivity = 20
 limit = 50
 predictiondatapoints = 4
-distancelist = np.concatenate((np.linspace(7,0,29), np.zeros(5)))
+distancelist = np.concatenate((np.linspace(7,0,71), np.zeros(5)))
 tolerance = 0.1
 def fitfunc(x,a,b):
     return ((a*x)+b) #linear
@@ -149,7 +149,7 @@ def findenergy(system, solvedsystem):
 #--------------------------------------------------------------------------------------------------
 #Moves the electrons closer to eachother
 def moveelectrons(distancelist):
-    print("generating movement")
+    writetooutput("generating movement")
     energies = []
     #excitation = finddoubleexcitation()
     excitation = 7
@@ -198,11 +198,11 @@ def moveelectrons(distancelist):
                 newstate = minusstate
                 samestate = True
             else:
-                if (n<3):
+                if (excitation-n > 0):
                     n = n + 1
                 else:
-                    writetooutput(f"No correct states found in the 6 surrounding excitations, distance = {distance}")
-                    raise Exception("No correct states found in the 6 surrounding excitations")
+                    writetooutput(f"No correct states found in the {n} surrounding excitations, distance = {distance}")
+                    raise Exception(f"No correct states found in the {n} surrounding excitations")
 
         laststate=newstate
         energies.append(findenergy(system,newstate)[0])
