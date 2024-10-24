@@ -21,7 +21,6 @@ for xnumber in xtestspace:
 
 
 
-
 plt.plot(xtestspace,times, "m-")
 plt.xlabel("Number of x grid points")
 plt.ylabel("Time (seconds)")
