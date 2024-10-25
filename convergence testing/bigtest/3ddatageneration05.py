@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import time
 import sys,os
+import datetime
 
 def blockprint():
     sys.stdout = open(os.devnull,"w")
@@ -11,13 +12,13 @@ def enableprint():
     sys.stdout = sys.__stdout__
 
 def writetooutput(message):
-    with open("3ddata.txt","a") as file:
+    with open("3ddata05.txt","a") as file:
         file.write(f"{message}\n")
 
 excitationlist = [0,1,2,3,4,5,6,7,8,9,10]
 xpointlist = np.linspace(25,500,20).astype(int)
 
-distancelist = [20,10,5,0]
+distancelist = [5]
 for distance in distancelist:
     timelist = []
     for excitation in excitationlist:
@@ -31,7 +32,7 @@ for distance in distancelist:
             state = idea.methods.interacting.solve(system, k=excitation)
             end = time.time()
             enableprint()
-            writetooutput(f"{distance},{excitation},{xpoint},{end-start},{state.energy}")
+            writetooutput(f"{datetime.datetime.now()},{distance},{excitation},{xpoint},{end-start},{state.energy}")
         
 
 
