@@ -10,7 +10,7 @@ times=[]
 for xnumber in xtestspace:
     x = np.linspace(-30,30,xnumber)
     v_int = idea.interactions.softened_interaction(x)
-    v_ext = -2*np.exp(-((x-20)**2)/10) - 2.005*np.exp(-((x+20)**2)/10) #gaussians
+    v_ext = -2*np.exp(-((x-10)**2)/10) - 2.005*np.exp(-((x+10)**2)/10) #gaussians
     
     system = idea.system.System(x,v_ext,v_int,electrons="uu")
     start = time.time()
@@ -24,10 +24,10 @@ for xnumber in xtestspace:
 plt.plot(xtestspace,times, "m-")
 plt.xlabel("Number of x grid points")
 plt.ylabel("Time (seconds)")
-plt.savefig("times.png")
+plt.savefig("times10.png")
 plt.close()
 
 plt.plot(xtestspace, np.log10(times), "m-")
 plt.xlabel("Number of x grid points")
 plt.ylabel("Log (time)")
-plt.savefig("logtimes.png")
+plt.savefig("logtimes10.png")
