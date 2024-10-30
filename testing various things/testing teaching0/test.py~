@@ -1,0 +1,5 @@
+import numpy as np
+import iDEA as idea
+
+atom = idea.system.systems.atom
+print(atom)

@@ -44,6 +44,8 @@ def getpotential(separation):
     v_ext = v_full
     return(v_ext)
 
+
+
 energylist = []
 for excitation in excitationlist:
     energylist.append([])
