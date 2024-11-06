@@ -36,8 +36,8 @@ for i in range(0,8):
     else:
         plt.plot(distancelist,energylist[i],"o",label=f"{i}th Excited State")
 
-plt.xlabel("Seperation")
-plt.ylabel("Energy")
+plt.xlabel("Seperation (Bohrs)")
+plt.ylabel("Energy (Hartrees)")
 plt.legend()
 plt.xlim(max(distancelist),0)
 plt.show()
