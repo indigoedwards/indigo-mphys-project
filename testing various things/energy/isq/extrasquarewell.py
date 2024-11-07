@@ -13,7 +13,7 @@ from tqdm import tqdm
 
 
 excitationlist = [0,1,2,3,4,5,6,7,8,9]
-distancelist = 6.7
+distancelist = np.linspace(9.9,0.1,50)
 output_filename = f"ISQ-energylevel-output-extra.txt"   
 x = np.linspace(-30,30,300)
 
@@ -47,9 +47,9 @@ def getpotential(separation):
 
 
 energylist = []
-for excitation in excitationlist:
+for excitation in tqdm(excitationlist,desc=f"Overall Progress"):
     energylist.append([])
-    for distance in distancelist:
+    for distance in tqdm(distancelist,desc=f"Progress for excitation {excitation}"):
   
         v_ext = getpotential(distance)
         v_int = idea.interactions.softened_interaction(x)
@@ -58,12 +58,12 @@ for excitation in excitationlist:
         blockPrint()
         state = idea.methods.interacting.solve(system,k=excitation)
         enablePrint()
-        idea.state.save_many_body_state(state, f"./extra/e{excitation}d{str(distance).replace('.','-')}.state")
+        idea.state.save_many_body_state(state, f"./extra/e{excitation}d{str(round(distance,2)).replace('.','-')}.state")
         energylist[excitation-min(excitationlist)].append(state.energy)
 
-        writetooutput(f"{datetime.datetime.now()}:      {round((float(np.where(distancelist==distance)[0][0]+1)/float((len(distancelist)*len(excitationlist))))*100,2)} %, k={excitation}, distance={distance}")
+        #writetooutput(f"{datetime.datetime.now()}:      {round((float(np.where(distancelist==distance)[0][0]+1)/float((len(distancelist)*len(excitationlist))))*100,2)} %, k={excitation}, distance={distance}")
         
-    plt.plot(distancelist,energylist[excitation-min(excitationlist)])
+    #plt.plot(distancelist,energylist[excitation-min(excitationlist)])
 
-writetooutput("")
-writetooutput(energylist)
+#writetooutput("")
+#writetooutput(energylist)
