@@ -1,0 +1,47 @@
+My working directory is /users/jcre500/scratch/project/convergence/excitation9
+Running job on host:
+	node101.viking2.yor.alces.network at Fri Nov 8 09:18:07 GMT 2024
+	using 13 cores
+
+Total Progress:   0%|          | 0/4 [00:00<?, ?it/s]
+Distance 20:   0%|          | 0/11 [00:00<?, ?it/s][A
+Distance 20:   0%|          | 0/11 [00:00<?, ?it/s, x number: 25][A
+Distance 20:   9%|▉         | 1/11 [00:01<00:18,  1.83s/it, x number: 25][A
+Distance 20:   9%|▉         | 1/11 [00:01<00:18,  1.83s/it, x number: 100][A
+Distance 20:  18%|█▊        | 2/11 [00:09<00:41,  4.57s/it, x number: 100][A
+Distance 20:  18%|█▊        | 2/11 [00:09<00:41,  4.57s/it, x number: 200][A
+Distance 20:  27%|██▋       | 3/11 [03:17<08:46, 65.77s/it, x number: 200][A
+Distance 20:  27%|██▋       | 3/11 [03:17<08:46, 65.77s/it, x number: 300][A
+Distance 20:  36%|███▋      | 4/11 [15:13<26:38, 228.35s/it, x number: 300][A
+Distance 20:  36%|███▋      | 4/11 [15:13<26:38, 228.35s/it, x number: 400][A
+Distance 20:  45%|████▌     | 5/11 [37:49<45:23, 453.92s/it, x number: 400][A
+Distance 20:  45%|████▌     | 5/11 [37:49<45:23, 453.92s/it, x number: 500][A
+Distance 20:  55%|█████▍    | 6/11 [1:24:57<1:10:47, 849.54s/it, x number: 500][A
+Distance 20:  55%|█████▍    | 6/11 [1:24:57<1:10:47, 849.54s/it, x number: 600][A
+Distance 20:  64%|██████▎   | 7/11 [2:04:56<1:11:23, 1070.87s/it, x number: 600][A
+Distance 20:  64%|██████▎   | 7/11 [2:04:56<1:11:23, 1070.87s/it, x number: 700][A
+Distance 20:  73%|███████▎  | 8/11 [3:08:30<1:10:41, 1413.78s/it, x number: 700][A
+Distance 20:  73%|███████▎  | 8/11 [3:08:30<1:10:41, 1413.78s/it, x number: 800][A/var/spool/slurmd.spool/job13412994/slurm_script: line 32: 878069 Killed                  OMP_NUM_TREADS=$SLURM_NTASKS python3 energy_convergence_testing.py
+
+Job completed at Fri Nov 8 14:11:20 GMT 2024
+slurmstepd: error: Detected 1 oom_kill event in StepId=13412994.batch. Some of the step tasks have been OOM Killed.
+
+============================
+ Job utilisation efficiency
+============================
+
+Job ID: 13412994
+Cluster: viking2.yor.alces.network
+User/Group: jcre500/clusterusers
+State: OUT_OF_MEMORY (exit code 0)
+Nodes: 7
+Cores per node: 1
+CPU Utilized: 09:38:43
+CPU Efficiency: 15.18% of 2-15:32:28 core-walltime
+Job Wall-clock time: 04:53:16
+Memory Utilized: 8.70 GB
+Memory Efficiency: 12.78% of 68.11 GB
+ Requested wall clock time: 1-00:00:00
+    Actual wall clock time: 04:53:16
+Wall clock time efficiency: 20.4%
+           Job queued time: 00:00:03

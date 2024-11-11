@@ -1,0 +1,36 @@
+My working directory is /users/jcre500/scratch/project/convergence/excitation7
+Running job on host:
+	node113.viking2.yor.alces.network at Sun Nov 10 20:09:35 GMT 2024
+	using 13 cores
+
+Total Progress:   0%|          | 0/1 [00:00<?, ?it/s]
+Distance 0:   0%|          | 0/3 [00:00<?, ?it/s][A
+Distance 0:   0%|          | 0/3 [00:00<?, ?it/s, x number: 800][A
+Distance 0:  33%|███▎      | 1/3 [42:38<1:25:17, 2558.98s/it, x number: 800][A
+Distance 0:  33%|███▎      | 1/3 [42:38<1:25:17, 2558.98s/it, x number: 900][A
+Distance 0:  67%|██████▋   | 2/3 [1:43:24<51:42, 3102.05s/it, x number: 900][A
+Distance 0:  67%|██████▋   | 2/3 [1:43:24<51:42, 3102.05s/it, x number: 1000][A
+Distance 0: 100%|██████████| 3/3 [3:03:10<00:00, 3663.63s/it, x number: 1000][ADistance 0: 100%|██████████| 3/3 [3:03:10<00:00, 3663.63s/it, x number: 1000]
+Total Progress: 100%|██████████| 1/1 [3:03:10<00:00, 10990.88s/it]Total Progress: 100%|██████████| 1/1 [3:03:10<00:00, 10990.88s/it]
+
+Job completed at Sun Nov 10 23:13:30 GMT 2024
+
+============================
+ Job utilisation efficiency
+============================
+
+Job ID: 13451836
+Cluster: viking2.yor.alces.network
+User/Group: jcre500/clusterusers
+State: COMPLETED (exit code 0)
+Nodes: 3
+Cores per node: 4
+CPU Utilized: 03:02:13
+CPU Efficiency: 7.62% of 1-15:51:08 core-walltime
+Job Wall-clock time: 03:03:56
+Memory Utilized: 11.18 GB
+Memory Efficiency: 11.64% of 96.00 GB
+ Requested wall clock time: 1-00:00:00
+    Actual wall clock time: 03:03:56
+Wall clock time efficiency: 12.8%
+           Job queued time: 00:00:13
