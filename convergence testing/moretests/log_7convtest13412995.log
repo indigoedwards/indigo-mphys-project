@@ -1,44 +1,0 @@
-My working directory is /users/jcre500/scratch/project/convergence/excitation7
-Running job on host:
-	node067.viking2.yor.alces.network at Fri Nov 8 09:18:45 GMT 2024
-	using 13 cores
-
-Total Progress:   0%|          | 0/4 [00:00<?, ?it/s]
-Distance 20:   0%|          | 0/11 [00:00<?, ?it/s][A
-Distance 20:   0%|          | 0/11 [00:00<?, ?it/s, x number: 25][A
-Distance 20:   9%|▉         | 1/11 [00:03<00:32,  3.26s/it, x number: 25][A
-Distance 20:   9%|▉         | 1/11 [00:03<00:32,  3.26s/it, x number: 100][A
-Distance 20:  18%|█▊        | 2/11 [00:51<03:51, 25.78s/it, x number: 100][A
-Distance 20:  18%|█▊        | 2/11 [00:51<03:51, 25.78s/it, x number: 200][A
-Distance 20:  27%|██▋       | 3/11 [07:00<18:40, 140.11s/it, x number: 200][A
-Distance 20:  27%|██▋       | 3/11 [07:00<18:40, 140.11s/it, x number: 300][A
-Distance 20:  36%|███▋      | 4/11 [31:34<55:15, 473.66s/it, x number: 300][A
-Distance 20:  36%|███▋      | 4/11 [31:34<55:15, 473.66s/it, x number: 400][A
-Distance 20:  45%|████▌     | 5/11 [1:33:25<1:52:06, 1121.00s/it, x number: 400][A
-Distance 20:  45%|████▌     | 5/11 [1:33:25<1:52:06, 1121.00s/it, x number: 500][A
-Distance 20:  55%|█████▍    | 6/11 [3:36:21<3:00:17, 2163.53s/it, x number: 500][A
-Distance 20:  55%|█████▍    | 6/11 [3:36:21<3:00:17, 2163.53s/it, x number: 600][A
-Distance 20:  64%|██████▎   | 7/11 [7:18:08<4:10:22, 3755.51s/it, x number: 600][A
-Distance 20:  64%|██████▎   | 7/11 [7:18:08<4:10:22, 3755.51s/it, x number: 700][A
-Distance 20:  73%|███████▎  | 8/11 [13:15:44<4:58:24, 5968.11s/it, x number: 700][A
-Distance 20:  73%|███████▎  | 8/11 [13:15:44<4:58:24, 5968.11s/it, x number: 800][Aslurmstepd: error: *** JOB 13412995 ON node067 CANCELLED AT 2024-11-09T08:08:26 ***
-
-============================
- Job utilisation efficiency
-============================
-
-Job ID: 13412995
-Cluster: viking2.yor.alces.network
-User/Group: jcre500/clusterusers
-State: CANCELLED (exit code 0)
-Nodes: 6
-Cores per node: 2
-CPU Utilized: 00:00:00
-CPU Efficiency: 0.00% of 12-08:46:45 core-walltime
-Job Wall-clock time: 22:49:45
-Memory Utilized: 7.54 GB
-Memory Efficiency: 11.07% of 68.11 GB
- Requested wall clock time: 1-00:00:00
-    Actual wall clock time: 22:49:45
-Wall clock time efficiency: 95.1%
-           Job queued time: 00:00:01

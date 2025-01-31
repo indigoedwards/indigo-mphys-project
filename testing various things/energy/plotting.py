@@ -32,9 +32,9 @@ for i in data:
 
 for i in range(0,10):
     if i==7:
-        plt.plot(distancelist,energylist[i],"o-",label=f"{i}th Excited State")
+        plt.plot(distancelist,energylist[i],label=f"{i}th Excited State")
     else:
-        plt.plot(distancelist,energylist[i],"o",label=f"{i}th Excited State")
+        plt.plot(distancelist,energylist[i],label=f"{i}th Excited State")
 
 plt.xlabel("Seperation (Bohrs)")
 plt.ylabel("Energy (Hartrees)")

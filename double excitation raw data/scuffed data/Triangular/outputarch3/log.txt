@@ -1,0 +1,120 @@
+My working directory is /users/jcre500/scratch/project/generatingexcitations/Idea
+Running job on host:
+	node033.viking2.yor.alces.network at Thu Nov 28 12:31:42 GMT 2024
+	using 13 cores
+
+
+ /$$$$$$       /$$
+|_  $$_/      | $$
+  | $$    /$$$$$$$  /$$$$$$   /$$$$$$
+  | $$   /$$__  $$ /$$__  $$ |____  $$
+  | $$  | $$  | $$| $$$$$$$$  /$$$$$$$
+  | $$  | $$  | $$| $$_____/ /$$__  $$
+ /$$$$$$|  $$$$$$$|  $$$$$$$|  $$$$$$$
+|______/ \_______/ \_______/ \_______/
+
+-----------------------------------------------------------------------------------
+2024-11-28 12:32:31.102878: Generating initial state at distance 4.125, DE=31
+2024-11-28 13:09:58.461481: Starting Movement
+2024-11-28 13:09:58.461562: Generating state at distance 4.0
+2024-11-28 13:50:41.710681: Double excitation state found at distance 4.0, Innerproduct 0.9712423322004836, DE=32
+2024-11-28 13:50:43.841215: Generating state at distance 3.875
+2024-11-28 14:27:44.441056: Double excitation state found at distance 3.875, Innerproduct 0.9712476163377416, DE=31
+2024-11-28 14:27:46.725344: Generating state at distance 3.75
+2024-11-28 15:08:05.917283: Double excitation state found at distance 3.75, Innerproduct 0.9712545413898297, DE=31
+2024-11-28 15:08:10.101590: Generating state at distance 3.625
+2024-11-28 15:47:03.461474: Double excitation state found at distance 3.625, Innerproduct 0.9712607837525867, DE=31
+2024-11-28 15:47:05.603813: Generating state at distance 3.5
+2024-11-28 16:27:04.185045: Double excitation state found at distance 3.5, Innerproduct 0.9712607887645338, DE=31
+2024-11-28 16:27:06.869772: Generating state at distance 3.375
+2024-11-28 17:07:45.219304: Double excitation state found at distance 3.375, Innerproduct 0.9712496615069596, DE=31
+2024-11-28 17:07:47.705470: Generating state at distance 3.25
+2024-11-28 17:48:03.294629: Double excitation state found at distance 3.25, Innerproduct 0.9712333805747209, DE=31
+2024-11-28 17:48:05.673021: Generating state at distance 3.125
+2024-11-28 18:25:22.330616: Double excitation state found at distance 3.125, Innerproduct 0.9712209525527229, DE=29
+2024-11-28 18:25:25.144174: Generating state at distance 3.0
+2024-11-28 19:00:56.992209: Double excitation state found at distance 3.0, Innerproduct 0.9712062618470589, DE=29
+2024-11-28 19:00:59.319779: Generating state at distance 2.875
+2024-11-28 19:35:49.972330: Double excitation state found at distance 2.875, Innerproduct 0.9710810997459024, DE=30
+2024-11-28 19:35:52.641936: Generating state at distance 2.75
+2024-11-28 20:09:51.237979: Double excitation state found at distance 2.75, Innerproduct 0.9708228816390251, DE=29
+2024-11-28 20:09:54.070093: Generating state at distance 2.625
+2024-11-28 20:42:51.647592: Double excitation state found at distance 2.625, Innerproduct 0.964583932564342, DE=29
+2024-11-28 20:42:53.938426: Generating state at distance 2.5
+2024-11-28 21:16:44.415017: Double excitation state not found at distance 2.5, Innerproduct 0.7588279768056607
+2024-11-28 21:16:45.059233: Generating state at distance 2.5625
+2024-11-28 21:52:58.471636: Double excitation state found at distance 2.5625, Innerproduct 0.9912876792152113, DE=30
+2024-11-28 21:53:01.397297: Generating state at distance 2.5
+2024-11-28 22:28:43.403902: Double excitation state not found at distance 2.5, Innerproduct 0.7369320682252442
+2024-11-28 22:28:43.548602: Generating state at distance 2.53125
+2024-11-28 23:04:05.510586: Double excitation state found at distance 2.53125, Innerproduct 0.9877535556592392, DE=30
+2024-11-28 23:04:08.299757: Generating state at distance 2.5
+2024-11-28 23:37:08.628264: Double excitation state not found at distance 2.5, Innerproduct 0.6409346154930122
+2024-11-28 23:37:08.798498: Generating state at distance 2.515625
+2024-11-29 00:11:41.176686: Double excitation state found at distance 2.515625, Innerproduct 0.9420059085182877, DE=29
+2024-11-29 00:11:44.100160: Generating state at distance 2.5
+2024-11-29 00:44:23.841493: Double excitation state not found at distance 2.5, Innerproduct 0.801585315380658
+2024-11-29 00:44:24.127325: Generating state at distance 2.5078125
+2024-11-29 01:16:36.970925: Double excitation state found at distance 2.5078125, Innerproduct 0.9425921193478016, DE=30
+2024-11-29 01:16:39.191707: Generating state at distance 2.5
+2024-11-29 01:50:00.540205: Double excitation state found at distance 2.5, Innerproduct 0.9533782804765927, DE=30
+2024-11-29 01:50:03.789955: Generating state at distance 2.375
+2024-11-29 02:21:28.611755: Double excitation state not found at distance 2.375, Innerproduct 0.8831464223711435
+2024-11-29 02:21:28.739914: Generating state at distance 2.4375
+2024-11-29 02:52:58.894392: Double excitation state found at distance 2.4375, Innerproduct 0.9489822574832596, DE=29
+2024-11-29 02:53:00.824039: Generating state at distance 2.375
+2024-11-29 03:23:10.300395: Double excitation state found at distance 2.375, Innerproduct 0.9849541192567075, DE=29
+2024-11-29 03:23:12.243666: Generating state at distance 2.25
+2024-11-29 03:53:12.626923: Double excitation state found at distance 2.25, Innerproduct 0.9767763586479197, DE=29
+2024-11-29 03:53:14.307588: Generating state at distance 2.125
+2024-11-29 04:23:17.391193: Double excitation state found at distance 2.125, Innerproduct 0.9859293410504103, DE=29
+2024-11-29 04:23:19.173975: Generating state at distance 2.0
+2024-11-29 04:53:30.854117: Double excitation state found at distance 2.0, Innerproduct 0.9877809710447919, DE=29
+2024-11-29 04:53:32.615449: Generating state at distance 1.875
+2024-11-29 05:23:44.664684: Double excitation state found at distance 1.875, Innerproduct 0.9868873213014028, DE=29
+2024-11-29 05:23:46.343980: Generating state at distance 1.75
+2024-11-29 05:54:00.758407: Double excitation state found at distance 1.75, Innerproduct 0.9832436353251499, DE=29
+2024-11-29 05:54:02.458632: Generating state at distance 1.625
+2024-11-29 06:23:34.279121: Double excitation state found at distance 1.625, Innerproduct 0.9260410251008567, DE=29
+2024-11-29 06:23:36.591675: Generating state at distance 1.5
+2024-11-29 06:52:10.960524: Double excitation state not found at distance 1.5, Innerproduct 0.7109573028411346
+2024-11-29 06:52:11.043680: Generating state at distance 1.5625
+2024-11-29 07:20:46.067293: Double excitation state not found at distance 1.5625, Innerproduct 0.8682548503886885
+2024-11-29 07:20:46.159372: Generating state at distance 1.59375
+2024-11-29 07:49:15.533717: Double excitation state found at distance 1.59375, Innerproduct 0.9682806594584008, DE=29
+2024-11-29 07:49:17.170098: Generating state at distance 1.5625
+2024-11-29 08:17:52.864641: Double excitation state found at distance 1.5625, Innerproduct 0.9645824066839599, DE=29
+2024-11-29 08:17:54.372690: Generating state at distance 1.53125
+2024-11-29 08:46:30.200611: Double excitation state found at distance 1.53125, Innerproduct 0.9835341854841714, DE=29
+2024-11-29 08:46:31.910435: Generating state at distance 1.5
+2024-11-29 09:14:37.420746: Double excitation state found at distance 1.5, Innerproduct 0.9928844145284234, DE=29
+2024-11-29 09:14:40.460555: Generating state at distance 1.375
+2024-11-29 09:47:09.625377: Double excitation state found at distance 1.375, Innerproduct 0.9717469368694706, DE=31
+2024-11-29 09:47:11.434111: Generating state at distance 1.25
+2024-11-29 10:22:03.972569: Double excitation state found at distance 1.25, Innerproduct 0.9494308876213827, DE=32
+2024-11-29 10:22:06.780646: Generating state at distance 1.125
+2024-11-29 10:57:32.416821: Double excitation state found at distance 1.125, Innerproduct 0.9833345929011932, DE=34
+2024-11-29 10:57:34.253628: Generating state at distance 1.0
+2024-11-29 11:39:33.873896: Double excitation state found at distance 1.0, Innerproduct 0.9883178237663418, DE=35
+2024-11-29 11:39:36.346858: Generating state at distance 0.875
+slurmstepd: error: *** JOB 13780819 ON node033 CANCELLED AT 2024-11-29T12:31:49 DUE TO TIME LIMIT ***
+
+============================
+ Job utilisation efficiency
+============================
+
+Job ID: 13780819
+Cluster: viking2.yor.alces.network
+User/Group: jcre500/clusterusers
+State: TIMEOUT (exit code 0)
+Nodes: 6
+Cores per node: 2
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 13-00:01:57 core-walltime
+Job Wall-clock time: 1-00:00:09
+Memory Utilized: 6.51 GB
+Memory Efficiency: 3.39% of 192.00 GB
+ Requested wall clock time: 1-00:00:00
+    Actual wall clock time: 1-00:00:09
+Wall clock time efficiency: 100.0%
+           Job queued time: 00:00:29

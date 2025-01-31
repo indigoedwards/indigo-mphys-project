@@ -1,0 +1,70 @@
+My working directory is /users/jcre500/scratch/project/generatingexcitations/Idea
+Running job on host:
+	node007.viking2.yor.alces.network at Wed Dec 11 20:18:45 GMT 2024
+	using 13 cores
+
+
+           _        _            _            _          
+         /\ \     /\ \         /\ \         / /\        
+         \ \ \   /  \ \____   /  \ \       / /  \       
+         /\ \_\ / /\ \_____\ / /\ \ \     / / /\ \      
+        / /\/_// / /\/___  // / /\ \_\   / / /\ \ \     
+       / / /  / / /   / / // /_/_ \/_/  / / /  \ \ \    
+      / / /  / / /   / / // /____/\    / / /___/ /\ \   
+     / / /  / / /   / / // /\____\/   / / /_____/ /\ \  
+ ___/ / /__ \ \ \__/ / // / /______  / /_________/\ \ \ 
+/\__\/_/___\ \ \___\/ // / /_______\/ / /_       __\ \_\
+\/_________/  \/_____/ \/__________/\_\___\     /____/_/
+
+-----------------------------------------------------------------------------------
+2024-12-11 20:19:36.862726: Generating initial state at distance 1.0, DE=35
+2024-12-11 21:00:01.581492: Starting Movement
+2024-12-11 21:00:01.592786: Generating state at distance 0.875
+2024-12-11 21:41:49.875522: Double excitation state found at distance 0.875, Innerproduct 0.9910348769474181, DE=37
+2024-12-11 21:41:52.478855: Generating state at distance 0.75
+2024-12-11 22:35:23.591643: Double excitation state found at distance 0.75, Innerproduct 0.9933683821514272, DE=39
+2024-12-11 22:35:26.120570: Generating state at distance 0.625
+2024-12-11 23:21:22.660879: Double excitation state found at distance 0.625, Innerproduct 0.9840839952596752, DE=41
+2024-12-11 23:21:25.464029: Generating state at distance 0.5
+2024-12-12 00:08:46.665524: Double excitation state found at distance 0.5, Innerproduct 0.9820873803776977, DE=42
+2024-12-12 00:08:49.343832: Generating state at distance 0.375
+2024-12-12 00:56:55.220233: Double excitation state found at distance 0.375, Innerproduct 0.9982250521745224, DE=43
+2024-12-12 00:56:57.924636: Generating state at distance 0.25
+2024-12-12 01:47:35.577150: Double excitation state found at distance 0.25, Innerproduct 0.9984781150721979, DE=45
+2024-12-12 01:47:38.716194: Generating state at distance 0.125
+2024-12-12 02:41:42.596197: Double excitation state found at distance 0.125, Innerproduct 0.996742653387867, DE=45
+2024-12-12 02:41:46.136271: Generating state at distance 0.0
+2024-12-12 03:39:27.940579: Double excitation state found at distance 0.0, Innerproduct 0.999899217831247, DE=46
+Final excitation number: 46
+Total states generated: 9
+States accepted: 8
+States rejected: 0
+Traceback (most recent call last):
+  File "/mnt/scratch/users/jcre500/project/generatingexcitations/Idea/main.py", line 23, in <module>
+    gif_wavefunctions(outputpath)
+  File "/mnt/scratch/users/jcre500/project/generatingexcitations/Idea/gifs.py", line 20, in gif_wavefunctions
+    img = next(imgs)
+          ^^^^^^^^^^
+StopIteration
+
+Job completed at Thu Dec 12 03:39:34 GMT 2024
+
+============================
+ Job utilisation efficiency
+============================
+
+Job ID: 14272687
+Cluster: viking2.yor.alces.network
+User/Group: jcre500/clusterusers
+State: COMPLETED (exit code 0)
+Nodes: 2
+Cores per node: 6
+CPU Utilized: 3-07:14:55
+CPU Efficiency: 82.96% of 3-23:31:16 core-walltime
+Job Wall-clock time: 07:20:52
+Memory Utilized: 6.26 GB
+Memory Efficiency: 9.78% of 64.00 GB
+ Requested wall clock time: 1-00:00:00
+    Actual wall clock time: 07:20:52
+Wall clock time efficiency: 30.6%
+           Job queued time: 00:00:24

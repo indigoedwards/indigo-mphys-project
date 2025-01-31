@@ -1,0 +1,68 @@
+My working directory is /users/jcre500/scratch/project/generatingexcitations/Idea
+Running job on host:
+	node075.viking2.yor.alces.network at Tue 26 Nov 15:30:50 GMT 2024
+	using 13 cores
+
+
+ ██▓▓█████▄ ▓█████ ▄▄▄      
+▓██▒▒██▀ ██▌▓█   ▀▒████▄    
+▒██▒░██   █▌▒███  ▒██  ▀█▄  
+░██░░▓█▄   ▌▒▓█  ▄░██▄▄▄▄██ 
+░██░░▒████▓ ░▒████▒▓█   ▓██▒
+░▓   ▒▒▓  ▒ ░░ ▒░ ░▒▒   ▓▒█░
+ ▒ ░ ░ ▒  ▒  ░ ░  ░ ▒   ▒▒ ░
+ ▒ ░ ░ ░  ░    ░    ░   ▒   
+ ░     ░       ░  ░     ░  ░
+     ░                      
+
+-----------------------------------------------------------------------------------
+2024-11-26 15:32:21.358421: Generating initial state at distance 10, DE=29
+2024-11-26 16:06:21.413350: Starting Movement
+2024-11-26 16:06:21.456403: Generating state at distance 9.75
+2024-11-26 16:40:24.842281: Double excitation state not found at distance 9.75, Innerproduct 0.8890939024902419
+2024-11-26 16:40:24.901770: Generating state at distance 9.875
+2024-11-26 17:15:39.362329: Double excitation state found at distance 9.875, Innerproduct 0.9712705267257309, DE=30
+2024-11-26 17:15:44.356704: Generating state at distance 9.75
+2024-11-26 17:52:30.287165: Double excitation state found at distance 9.75, Innerproduct 0.9712748662559884, DE=29
+2024-11-26 17:52:35.946933: Generating state at distance 9.5
+2024-11-26 18:28:14.934059: Double excitation state not found at distance 9.5, Innerproduct 0.8891111739192571
+2024-11-26 18:28:17.600040: Generating state at distance 9.625
+2024-11-26 19:05:18.673043: Double excitation state found at distance 9.625, Innerproduct 0.971277128606387, DE=28
+2024-11-26 19:05:23.864478: Generating state at distance 9.5
+2024-11-26 20:25:33.444730: Double excitation state found at distance 9.5, Innerproduct 0.9712771986324845, DE=29
+2024-11-26 20:25:38.339289: Generating state at distance 9.25
+2024-11-26 21:05:42.579858: Double excitation state not found at distance 9.25, Innerproduct 0.8890988564560687
+2024-11-26 21:05:45.843511: Generating state at distance 9.375
+2024-11-26 21:46:31.475017: Double excitation state found at distance 9.375, Innerproduct 0.9712754748192172, DE=29
+2024-11-26 21:46:35.893881: Generating state at distance 9.25
+2024-11-26 22:30:55.544932: Double excitation state found at distance 9.25, Innerproduct 0.9712724967713211, DE=30
+2024-11-26 22:31:00.492357: Generating state at distance 9.0
+2024-11-26 23:09:54.700884: Double excitation state not found at distance 9.0, Innerproduct 0.8890686989083132
+2024-11-26 23:09:56.642769: Generating state at distance 9.125
+2024-11-26 23:49:22.556810: Double excitation state found at distance 9.125, Innerproduct 0.9712685912608887, DE=30
+2024-11-26 23:49:27.869036: Generating state at distance 9.0
+2024-11-27 00:30:04.461016: Double excitation state found at distance 9.0, Innerproduct 0.9712638508352425, DE=29
+2024-11-27 00:30:09.914964: Generating state at distance 8.75
+2024-11-27 01:08:16.668039: Double excitation state not found at distance 8.75, Innerproduct 0.8890264557510156
+2024-11-27 01:08:18.722635: Generating state at distance 8.875
+slurmstepd: error: *** JOB 13713890 ON node075 CANCELLED AT 2024-11-27T01:30:55 DUE TO TIME LIMIT ***
+
+============================
+ Job utilisation efficiency
+============================
+
+Job ID: 13713890
+Cluster: viking2.yor.alces.network
+User/Group: jcre500/clusterusers
+State: TIMEOUT (exit code 0)
+Nodes: 2
+Cores per node: 6
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 5-10:01:44 core-walltime
+Job Wall-clock time: 10:00:08
+Memory Utilized: 5.15 GB
+Memory Efficiency: 8.05% of 64.00 GB
+ Requested wall clock time: 10:00:00
+    Actual wall clock time: 10:00:08
+Wall clock time efficiency: 100.0%
+           Job queued time: 00:00:23
