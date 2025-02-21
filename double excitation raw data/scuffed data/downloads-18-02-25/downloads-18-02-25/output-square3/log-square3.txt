@@ -1,0 +1,41 @@
+My working directory is /users/jcre500/scratch/project/generatingexcitations/Idea
+Running job on host:
+	node126.viking2.yor.alces.network at Mon Feb 17 14:50:56 GMT 2025
+	using 1 cores
+
+Traceback (most recent call last):
+  File "/mnt/scratch/users/jcre500/project/generatingexcitations/Idea/main.py", line 15, in <module>
+    clearoutputs(outputpath)
+  File "/mnt/scratch/users/jcre500/project/generatingexcitations/Idea/clearoutputs.py", line 7, in clearoutputs
+    shutil.rmtree(f"{output_filepath}/")
+  File "/opt/apps/eb/software/Python/3.11.3-GCCcore-12.3.0/lib/python3.11/shutil.py", line 732, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/opt/apps/eb/software/Python/3.11.3-GCCcore-12.3.0/lib/python3.11/shutil.py", line 660, in _rmtree_safe_fd
+    _rmtree_safe_fd(dirfd, fullname, onerror)
+  File "/opt/apps/eb/software/Python/3.11.3-GCCcore-12.3.0/lib/python3.11/shutil.py", line 683, in _rmtree_safe_fd
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "/opt/apps/eb/software/Python/3.11.3-GCCcore-12.3.0/lib/python3.11/shutil.py", line 681, in _rmtree_safe_fd
+    os.unlink(entry.name, dir_fd=topfd)
+FileNotFoundError: [Errno 2] No such file or directory: 'Density-E0006.png'
+
+Job completed at Mon Feb 17 14:51:01 GMT 2025
+
+============================
+ Job utilisation efficiency
+============================
+
+Job ID: 15919505
+Cluster: viking2.yor.alces.network
+User/Group: jcre500/clusterusers
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 40
+CPU Utilized: 00:00:10
+CPU Efficiency: 5.00% of 00:03:20 core-walltime
+Job Wall-clock time: 00:00:05
+Memory Utilized: 4.11 MB
+Memory Efficiency: 0.01% of 32.00 GB
+ Requested wall clock time: 4-04:00:00
+    Actual wall clock time: 00:00:05
+Wall clock time efficiency: 0.0%
+           Job queued time: 1-00:38:19

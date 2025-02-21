@@ -1,0 +1,572 @@
+My working directory is /users/jcre500/scratch/project/generatingexcitations/Idea
+Running job on host:
+	node124.viking2.yor.alces.network at Mon Feb 17 01:43:26 GMT 2025
+	using 1 cores
+
+
+ /$$$$$$       /$$
+|_  $$_/      | $$
+  | $$    /$$$$$$$  /$$$$$$   /$$$$$$
+  | $$   /$$__  $$ /$$__  $$ |____  $$
+  | $$  | $$  | $$| $$$$$$$$  /$$$$$$$
+  | $$  | $$  | $$| $$_____/ /$$__  $$
+ /$$$$$$|  $$$$$$$|  $$$$$$$|  $$$$$$$
+|______/ \_______/ \_______/ \_______/
+
+-----------------------------------------------------------------------------------
+2025-02-17 01:44:02.981155: Finding double excitation
+2025-02-17 01:44:26.734342: Searched k=1, continuing...
+2025-02-17 01:44:49.062543: Searched k=2, continuing...
+2025-02-17 01:45:36.631028: Searched k=3, continuing...
+2025-02-17 01:47:02.502524: Searched k=4, continuing...
+2025-02-17 01:49:08.365065: Searched k=5, continuing...
+2025-02-17 01:51:56.038823: Searched k=6, continuing...
+2025-02-17 01:56:03.126459: Double excitation found in the 7th excited state.
+2025-02-17 01:56:03.127359: Generating initial state at distance 10, DE=7
+2025-02-17 02:06:19.819834: Starting Movement
+2025-02-17 02:06:19.819914: Generating state at distance 9.75
+2025-02-17 02:16:32.856193: Double excitation state found at distance 9.75, Innerproduct 0.9033937103385985, DE=7
+2025-02-17 02:16:33.315102: Generating state at distance 9.5
+2025-02-17 02:26:31.973433: Double excitation state found at distance 9.5, Innerproduct 0.9033912406413438, DE=7
+2025-02-17 02:26:32.398643: Generating state at distance 9.25
+2025-02-17 02:36:05.398127: Double excitation state found at distance 9.25, Innerproduct 0.9033885964754587, DE=7
+2025-02-17 02:36:05.859772: Generating state at distance 9.0
+2025-02-17 02:45:40.531014: Double excitation state found at distance 9.0, Innerproduct 0.903385733875349, DE=7
+2025-02-17 02:45:40.981903: Generating state at distance 8.75
+2025-02-17 02:55:44.121033: Double excitation state found at distance 8.75, Innerproduct 0.9033826002532723, DE=7
+2025-02-17 02:55:45.498182: Generating state at distance 8.5
+2025-02-17 03:04:45.222131: Double excitation state found at distance 8.5, Innerproduct 0.9378656332976931, DE=7
+2025-02-17 03:04:45.752294: Generating state at distance 8.25
+2025-02-17 03:14:20.775426: Double excitation state found at distance 8.25, Innerproduct 0.9380472926240288, DE=7
+2025-02-17 03:14:21.319818: Generating state at distance 8.0
+2025-02-17 03:23:37.434578: Double excitation state found at distance 8.0, Innerproduct 0.9033702786483935, DE=7
+2025-02-17 03:23:37.863992: Generating state at distance 7.75
+2025-02-17 03:33:17.562883: Double excitation state found at distance 7.75, Innerproduct 0.9033647199631906, DE=7
+2025-02-17 03:33:18.169133: Generating state at distance 7.5
+2025-02-17 03:42:46.451448: Double excitation state found at distance 7.5, Innerproduct 0.903358460379353, DE=7
+2025-02-17 03:42:46.936045: Generating state at distance 7.25
+2025-02-17 03:52:01.215126: Double excitation state found at distance 7.25, Innerproduct 0.9033513376880761, DE=7
+2025-02-17 03:52:01.724602: Generating state at distance 7.0
+2025-02-17 04:00:52.953878: Double excitation state found at distance 7.0, Innerproduct 0.9033431477505329, DE=7
+2025-02-17 04:00:54.174910: Generating state at distance 6.75
+2025-02-17 04:10:20.602291: Double excitation state found at distance 6.75, Innerproduct 0.9033336308513199, DE=8
+2025-02-17 04:10:21.136512: Generating state at distance 6.5
+2025-02-17 04:20:52.402199: Double excitation state found at distance 6.5, Innerproduct 0.9377830729005655, DE=7
+2025-02-17 04:20:52.837930: Generating state at distance 6.25
+2025-02-17 04:30:36.843052: Double excitation state found at distance 6.25, Innerproduct 0.9380884287999132, DE=7
+2025-02-17 04:30:37.248262: Generating state at distance 6.0
+2025-02-17 04:40:34.441421: Double excitation state found at distance 6.0, Innerproduct 0.9032971305046029, DE=7
+2025-02-17 04:40:35.017537: Generating state at distance 5.75
+2025-02-17 04:50:06.313471: Double excitation state found at distance 5.75, Innerproduct 0.9032784820368788, DE=7
+2025-02-17 04:50:06.763350: Generating state at distance 5.5
+2025-02-17 05:00:06.250501: Double excitation state found at distance 5.5, Innerproduct 0.90325582625865, DE=7
+2025-02-17 05:00:06.913937: Generating state at distance 5.25
+2025-02-17 05:10:10.579790: Double excitation state found at distance 5.25, Innerproduct 0.9032278720834006, DE=7
+2025-02-17 05:10:11.473347: Generating state at distance 5.0
+2025-02-17 05:19:12.194892: Double excitation state found at distance 5.0, Innerproduct 0.9031926844340664, DE=8
+2025-02-17 05:19:12.596179: Generating state at distance 4.75
+2025-02-17 05:29:38.531024: Double excitation state found at distance 4.75, Innerproduct 0.9375731074558575, DE=7
+2025-02-17 05:29:38.921092: Generating state at distance 4.5
+2025-02-17 05:39:16.129871: Double excitation state found at distance 4.5, Innerproduct 0.9381468186982689, DE=11
+2025-02-17 05:39:16.530238: Generating state at distance 4.25
+2025-02-17 05:54:45.521621: Double excitation state found at distance 4.25, Innerproduct 0.9028874783956262, DE=10
+2025-02-17 05:54:46.032971: Generating state at distance 4.0
+2025-02-17 06:07:36.355170: Double excitation state found at distance 4.0, Innerproduct 0.9010990775916051, DE=12
+2025-02-17 06:07:36.922171: Generating state at distance 3.75
+2025-02-17 06:25:36.281195: Double excitation state not found at distance 3.75, Innerproduct 0.8871568611387018
+2025-02-17 06:25:36.954063: Generating state at distance 3.875
+2025-02-17 06:43:19.877483: Double excitation state found at distance 3.875, Innerproduct 0.9723377022026024, DE=10
+2025-02-17 06:43:20.414287: Generating state at distance 3.75
+2025-02-17 06:56:26.622285: Double excitation state found at distance 3.75, Innerproduct 0.9688960016651216, DE=10
+2025-02-17 06:56:27.232007: Generating state at distance 3.5
+2025-02-17 07:09:21.150451: Double excitation state not found at distance 3.5, Innerproduct 0.865392727199963
+2025-02-17 07:09:21.401952: Generating state at distance 3.625
+2025-02-17 07:21:48.604817: Double excitation state found at distance 3.625, Innerproduct 0.9654204973801742, DE=10
+2025-02-17 07:21:49.570849: Generating state at distance 3.5
+2025-02-17 07:34:29.370039: Double excitation state found at distance 3.5, Innerproduct 0.9641429243144174, DE=9
+2025-02-17 07:34:30.260289: Generating state at distance 3.25
+2025-02-17 07:46:21.954756: Double excitation state not found at distance 3.25, Innerproduct 0.8664972373222681
+2025-02-17 07:46:22.020802: Generating state at distance 3.375
+2025-02-17 07:58:03.501216: Double excitation state found at distance 3.375, Innerproduct 0.9649298669084102, DE=10
+2025-02-17 07:58:03.927591: Generating state at distance 3.25
+2025-02-17 08:11:18.661129: Double excitation state found at distance 3.25, Innerproduct 0.9654842397977458, DE=9
+2025-02-17 08:11:19.126587: Generating state at distance 3.0
+2025-02-17 08:23:32.083724: Double excitation state not found at distance 3.0, Innerproduct 0.8596461615602621
+2025-02-17 08:23:32.203542: Generating state at distance 3.125
+2025-02-17 08:35:18.384580: Double excitation state found at distance 3.125, Innerproduct 0.9643136977998737, DE=8
+2025-02-17 08:35:18.970235: Generating state at distance 3.0
+2025-02-17 08:45:57.346385: Double excitation state found at distance 3.0, Innerproduct 0.9624295965828481, DE=9
+2025-02-17 08:45:58.532314: Generating state at distance 2.75
+2025-02-17 08:57:16.062554: Double excitation state found at distance 2.75, Innerproduct 0.9174554049982303, DE=10
+2025-02-17 08:57:16.523831: Generating state at distance 2.5
+2025-02-17 09:09:49.564947: Double excitation state found at distance 2.5, Innerproduct 0.9043727757515384, DE=9
+2025-02-17 09:09:50.067115: Generating state at distance 2.25
+2025-02-17 09:20:46.409642: Double excitation state not found at distance 2.25, Innerproduct 0.8748865179484375
+2025-02-17 09:20:46.479048: Generating state at distance 2.375
+2025-02-17 09:31:47.615284: Double excitation state found at distance 2.375, Innerproduct 0.9363488893905757, DE=7
+2025-02-17 09:31:48.602530: Generating state at distance 2.25
+2025-02-17 09:40:17.766001: Double excitation state found at distance 2.25, Innerproduct 0.9590940028084919, DE=7
+2025-02-17 09:40:18.281350: Generating state at distance 2.0
+2025-02-17 09:48:45.366854: Double excitation state not found at distance 2.0, Innerproduct 0.7157858028132658
+2025-02-17 09:48:45.499621: Generating state at distance 2.125
+2025-02-17 09:57:04.320386: Double excitation state found at distance 2.125, Innerproduct 0.9471373581377057, DE=7
+2025-02-17 09:57:05.143030: Generating state at distance 2.0
+2025-02-17 10:05:09.913896: Double excitation state not found at distance 2.0, Innerproduct 0.8891104652807765
+2025-02-17 10:05:09.968406: Generating state at distance 2.0625
+2025-02-17 10:13:51.149575: Double excitation state not found at distance 2.0625, Innerproduct 0.8582618026128552
+2025-02-17 10:13:51.201235: Generating state at distance 2.09375
+2025-02-17 10:22:40.588320: Double excitation state found at distance 2.09375, Innerproduct 0.9995671340820547, DE=7
+2025-02-17 10:22:41.092969: Generating state at distance 2.0625
+2025-02-17 10:31:02.227696: Double excitation state not found at distance 2.0625, Innerproduct 0.8449255174454107
+2025-02-17 10:31:02.261832: Generating state at distance 2.078125
+2025-02-17 10:39:47.911473: Double excitation state found at distance 2.078125, Innerproduct 0.9713102163034795, DE=7
+2025-02-17 10:39:48.491541: Generating state at distance 2.0625
+2025-02-17 10:48:12.780124: Double excitation state found at distance 2.0625, Innerproduct 0.9334044646165075, DE=7
+2025-02-17 10:48:13.327211: Generating state at distance 2.046875
+2025-02-17 10:56:08.913566: Double excitation state found at distance 2.046875, Innerproduct 0.9998287026913794, DE=7
+2025-02-17 10:56:09.455309: Generating state at distance 2.03125
+2025-02-17 11:04:20.798510: Double excitation state found at distance 2.03125, Innerproduct 0.999823911376912, DE=7
+2025-02-17 11:04:21.975224: Generating state at distance 2.015625
+2025-02-17 11:12:39.940046: Double excitation state found at distance 2.015625, Innerproduct 0.9998187864464648, DE=7
+2025-02-17 11:12:40.524856: Generating state at distance 2.0
+2025-02-17 11:20:51.633703: Double excitation state found at distance 2.0, Innerproduct 0.9998144313682412, DE=7
+2025-02-17 11:20:52.152462: Generating state at distance 1.75
+2025-02-17 11:29:06.104569: Double excitation state not found at distance 1.75, Innerproduct 0.8646727459699146
+2025-02-17 11:29:06.155723: Generating state at distance 1.875
+2025-02-17 11:38:01.399619: Double excitation state found at distance 1.875, Innerproduct 0.9163100764477184, DE=6
+2025-02-17 11:38:01.791390: Generating state at distance 1.75
+2025-02-17 11:45:02.136431: Double excitation state found at distance 1.75, Innerproduct 0.9682337244274499, DE=6
+2025-02-17 11:45:02.839894: Generating state at distance 1.5
+2025-02-17 11:52:02.722353: Double excitation state found at distance 1.5, Innerproduct 0.9008578212309366, DE=6
+2025-02-17 11:52:03.159900: Generating state at distance 1.25
+2025-02-17 11:58:51.621637: Double excitation state not found at distance 1.25, Innerproduct 0.7217125143187177
+2025-02-17 11:58:51.693921: Generating state at distance 1.375
+2025-02-17 12:05:43.594715: Double excitation state found at distance 1.375, Innerproduct 0.9272325061947638, DE=6
+2025-02-17 12:05:44.370902: Generating state at distance 1.25
+2025-02-17 12:12:11.733789: Double excitation state found at distance 1.25, Innerproduct 0.9062359437382935, DE=5
+2025-02-17 12:12:12.993149: Generating state at distance 1.0
+2025-02-17 12:17:15.738266: Double excitation state not found at distance 1.0, Innerproduct 0.8175309956038508
+2025-02-17 12:17:15.861266: Generating state at distance 1.125
+2025-02-17 12:22:27.799585: Double excitation state found at distance 1.125, Innerproduct 0.9140351610063017, DE=5
+2025-02-17 12:22:28.426210: Generating state at distance 1.0
+2025-02-17 12:27:44.811630: Double excitation state not found at distance 1.0, Innerproduct 0.7709264657647008
+2025-02-17 12:27:44.903062: Generating state at distance 1.0625
+2025-02-17 12:33:06.042823: Double excitation state found at distance 1.0625, Innerproduct 0.9680901996449358, DE=5
+2025-02-17 12:33:06.728190: Generating state at distance 1.0
+2025-02-17 12:38:23.641990: Double excitation state not found at distance 1.0, Innerproduct 0.7968479766791859
+2025-02-17 12:38:23.781215: Generating state at distance 1.03125
+2025-02-17 12:43:39.035047: Double excitation state found at distance 1.03125, Innerproduct 0.9995073086073728, DE=5
+2025-02-17 12:43:39.667425: Generating state at distance 1.0
+2025-02-17 12:49:09.602687: Double excitation state not found at distance 1.0, Innerproduct 0.8117221613281312
+2025-02-17 12:49:09.729561: Generating state at distance 1.015625
+2025-02-17 12:54:17.576932: Double excitation state not found at distance 1.015625, Innerproduct 0.8949499153787871
+2025-02-17 12:54:17.811517: Generating state at distance 1.0234375
+2025-02-17 12:59:40.845555: Double excitation state found at distance 1.0234375, Innerproduct 0.9999813089614413, DE=5
+2025-02-17 12:59:41.435937: Generating state at distance 1.015625
+2025-02-17 13:05:25.393686: Double excitation state not found at distance 1.015625, Innerproduct 0.8965968768049782
+2025-02-17 13:05:25.476632: Generating state at distance 1.01953125
+2025-02-17 13:11:09.525464: Double excitation state found at distance 1.01953125, Innerproduct 0.9999957835851155, DE=5
+2025-02-17 13:11:10.168574: Generating state at distance 1.015625
+2025-02-17 13:16:16.708369: Double excitation state not found at distance 1.015625, Innerproduct 0.8973162221268499
+2025-02-17 13:16:16.773911: Generating state at distance 1.017578125
+2025-02-17 13:21:24.222019: Double excitation state found at distance 1.017578125, Innerproduct 0.9999989928226172, DE=5
+2025-02-17 13:21:25.101586: Generating state at distance 1.015625
+2025-02-17 13:26:42.849431: Double excitation state not found at distance 1.015625, Innerproduct 0.8976525759597034
+2025-02-17 13:26:42.890760: Generating state at distance 1.0166015625
+2025-02-17 13:32:34.144201: Double excitation state found at distance 1.0166015625, Innerproduct 0.9008039324992599, DE=6
+2025-02-17 13:32:34.653283: Generating state at distance 1.015625
+2025-02-17 13:39:18.513726: Double excitation state found at distance 1.015625, Innerproduct 0.9999700880692304, DE=6
+2025-02-17 13:39:18.899046: Generating state at distance 1.0146484375
+2025-02-17 13:46:41.633184: Double excitation state found at distance 1.0146484375, Innerproduct 0.9999679067008842, DE=6
+2025-02-17 13:46:42.103899: Generating state at distance 1.013671875
+2025-02-17 13:53:56.076052: Double excitation state found at distance 1.013671875, Innerproduct 0.9999655583181573, DE=6
+2025-02-17 13:53:58.673469: Generating state at distance 1.0126953125
+2025-02-17 14:01:15.029275: Double excitation state found at distance 1.0126953125, Innerproduct 0.9999630321389839, DE=6
+2025-02-17 14:01:15.674360: Generating state at distance 1.01171875
+2025-02-17 14:08:08.935094: Double excitation state found at distance 1.01171875, Innerproduct 0.9999603173549257, DE=6
+2025-02-17 14:08:09.490311: Generating state at distance 1.0107421875
+2025-02-17 14:14:53.449940: Double excitation state found at distance 1.0107421875, Innerproduct 0.9999574033259487, DE=6
+2025-02-17 14:14:54.019559: Generating state at distance 1.009765625
+2025-02-17 14:21:59.157079: Double excitation state found at distance 1.009765625, Innerproduct 0.999954279826965, DE=6
+2025-02-17 14:21:59.768617: Generating state at distance 1.0087890625
+2025-02-17 14:29:17.544994: Double excitation state found at distance 1.0087890625, Innerproduct 0.9999509373502455, DE=6
+2025-02-17 14:29:18.878934: Generating state at distance 1.0078125
+2025-02-17 14:36:23.120629: Double excitation state found at distance 1.0078125, Innerproduct 0.9999473674723393, DE=6
+2025-02-17 14:36:23.754702: Generating state at distance 1.0068359375
+2025-02-17 14:43:00.444668: Double excitation state found at distance 1.0068359375, Innerproduct 0.9999435632911056, DE=6
+2025-02-17 14:43:01.014140: Generating state at distance 1.005859375
+2025-02-17 14:49:30.329123: Double excitation state found at distance 1.005859375, Innerproduct 0.999939519934506, DE=6
+2025-02-17 14:49:30.928414: Generating state at distance 1.0048828125
+2025-02-17 14:55:46.483845: Double excitation state found at distance 1.0048828125, Innerproduct 0.9999352351452052, DE=6
+2025-02-17 14:55:46.986343: Generating state at distance 1.00390625
+2025-02-17 15:02:19.139418: Double excitation state found at distance 1.00390625, Innerproduct 0.9999307099362006, DE=6
+2025-02-17 15:02:19.713992: Generating state at distance 1.0029296875
+2025-02-17 15:08:57.449058: Double excitation state found at distance 1.0029296875, Innerproduct 0.9999259493092371, DE=6
+2025-02-17 15:08:58.141747: Generating state at distance 1.001953125
+2025-02-17 15:15:10.821192: Double excitation state found at distance 1.001953125, Innerproduct 0.9999209630209331, DE=6
+2025-02-17 15:15:11.360592: Generating state at distance 1.0009765625
+2025-02-17 15:21:30.816618: Double excitation state found at distance 1.0009765625, Innerproduct 0.9999157663726628, DE=6
+2025-02-17 15:21:31.454601: Generating state at distance 0.7509765625
+2025-02-17 15:27:52.068932: Double excitation state not found at distance 0.7509765625, Innerproduct 0.8260109961905125
+2025-02-17 15:27:52.208439: Generating state at distance 0.8759765625
+2025-02-17 15:34:37.845156: Double excitation state not found at distance 0.8759765625, Innerproduct 0.8790449548916517
+2025-02-17 15:34:38.239351: Generating state at distance 0.9384765625
+2025-02-17 15:41:52.897189: Double excitation state not found at distance 0.9384765625, Innerproduct 0.8883961025190751
+2025-02-17 15:41:52.944742: Generating state at distance 0.9697265625
+2025-02-17 15:48:52.586225: Double excitation state not found at distance 0.9697265625, Innerproduct 0.8858164259195754
+2025-02-17 15:48:52.621463: Generating state at distance 0.9853515625
+2025-02-17 15:56:03.907222: Double excitation state not found at distance 0.9853515625, Innerproduct 0.8846780959485746
+2025-02-17 15:56:04.125996: Generating state at distance 0.9931640625
+2025-02-17 16:02:44.261197: Double excitation state not found at distance 0.9931640625, Innerproduct 0.8841371841913654
+2025-02-17 16:02:44.395509: Generating state at distance 0.9970703125
+2025-02-17 16:09:46.749519: Double excitation state not found at distance 0.9970703125, Innerproduct 0.8838722732954859
+2025-02-17 16:09:46.983535: Generating state at distance 0.9990234375
+2025-02-17 16:16:17.504504: Double excitation state not found at distance 0.9990234375, Innerproduct 0.8837413994633809
+2025-02-17 16:16:17.902132: Generating state at distance 1.0
+2025-02-17 16:23:12.826640: Double excitation state found at distance 1.0, Innerproduct 0.9999103809893112, DE=6
+2025-02-17 16:23:13.399269: Generating state at distance 0.75
+2025-02-17 16:29:31.131155: Double excitation state not found at distance 0.75, Innerproduct 0.8210138574700159
+2025-02-17 16:29:31.227528: Generating state at distance 0.875
+2025-02-17 16:36:06.859409: Double excitation state not found at distance 0.875, Innerproduct 0.8735519713298691
+2025-02-17 16:36:06.928006: Generating state at distance 0.9375
+2025-02-17 16:42:37.161440: Double excitation state not found at distance 0.9375, Innerproduct 0.8828253719568367
+2025-02-17 16:42:37.379250: Generating state at distance 0.96875
+2025-02-17 16:49:31.164447: Double excitation state not found at distance 0.96875, Innerproduct 0.880141131888865
+2025-02-17 16:49:31.270502: Generating state at distance 0.984375
+2025-02-17 16:55:50.455965: Double excitation state not found at distance 0.984375, Innerproduct 0.8789593034932145
+2025-02-17 16:55:50.556747: Generating state at distance 0.9921875
+2025-02-17 17:01:44.435700: Double excitation state not found at distance 0.9921875, Innerproduct 0.8783989267782016
+2025-02-17 17:01:45.100057: Generating state at distance 0.99609375
+2025-02-17 17:08:07.931490: Double excitation state not found at distance 0.99609375, Innerproduct 0.8781244144658692
+2025-02-17 17:08:08.086285: Generating state at distance 0.998046875
+2025-02-17 17:14:16.876748: Double excitation state not found at distance 0.998046875, Innerproduct 0.8779888430860328
+2025-02-17 17:14:17.032731: Generating state at distance 0.9990234375
+2025-02-17 17:20:12.252458: Double excitation state not found at distance 0.9990234375, Innerproduct 0.8779214659888666
+2025-02-17 17:20:12.378342: Generating state at distance 0.99951171875
+2025-02-17 17:25:59.930909: Double excitation state not found at distance 0.99951171875, Innerproduct 0.8778878780429913
+2025-02-17 17:26:00.105173: Generating state at distance 0.999755859375
+2025-02-17 17:32:11.937510: Double excitation state not found at distance 0.999755859375, Innerproduct 0.8778711090295851
+2025-02-17 17:32:12.027627: Generating state at distance 0.9998779296875
+2025-02-17 17:38:34.565703: Double excitation state not found at distance 0.9998779296875, Innerproduct 0.8778627307385044
+2025-02-17 17:38:34.637529: Generating state at distance 0.99993896484375
+2025-02-17 17:44:54.607340: Double excitation state not found at distance 0.99993896484375, Innerproduct 0.8778585431441467
+2025-02-17 17:44:54.742904: Generating state at distance 0.999969482421875
+2025-02-17 17:51:08.406506: Double excitation state found at distance 0.999969482421875, Innerproduct 0.9999999097041905, DE=6
+2025-02-17 17:51:09.418513: Generating state at distance 0.749969482421875
+2025-02-17 17:57:23.572407: Double excitation state not found at distance 0.749969482421875, Innerproduct 0.8208527901123628
+2025-02-17 17:57:23.673046: Generating state at distance 0.874969482421875
+2025-02-17 18:03:47.884272: Double excitation state not found at distance 0.874969482421875, Innerproduct 0.8733750565778757
+2025-02-17 18:03:47.988287: Generating state at distance 0.937469482421875
+2025-02-17 18:10:12.228454: Double excitation state not found at distance 0.937469482421875, Innerproduct 0.8826460018319221
+2025-02-17 18:10:12.558963: Generating state at distance 0.968719482421875
+2025-02-17 18:16:06.517429: Double excitation state not found at distance 0.968719482421875, Innerproduct 0.8799584372017498
+2025-02-17 18:16:06.637057: Generating state at distance 0.984344482421875
+2025-02-17 18:22:09.475581: Double excitation state not found at distance 0.984344482421875, Innerproduct 0.8787752262943016
+2025-02-17 18:22:09.609948: Generating state at distance 0.992156982421875
+2025-02-17 18:28:21.456516: Double excitation state not found at distance 0.992156982421875, Innerproduct 0.8782142312870287
+2025-02-17 18:28:21.549980: Generating state at distance 0.996063232421875
+2025-02-17 18:34:50.603959: Double excitation state not found at distance 0.996063232421875, Innerproduct 0.8779394138820399
+2025-02-17 18:34:50.701584: Generating state at distance 0.998016357421875
+2025-02-17 18:41:08.126824: Double excitation state not found at distance 0.998016357421875, Innerproduct 0.8778036932393709
+2025-02-17 18:41:08.235913: Generating state at distance 0.998992919921875
+2025-02-17 18:47:29.153953: Double excitation state not found at distance 0.998992919921875, Innerproduct 0.8777362423159135
+2025-02-17 18:47:29.254906: Generating state at distance 0.999481201171875
+2025-02-17 18:53:42.027856: Double excitation state not found at distance 0.999481201171875, Innerproduct 0.8777026176560211
+2025-02-17 18:53:42.135570: Generating state at distance 0.999725341796875
+2025-02-17 19:00:09.052725: Double excitation state not found at distance 0.999725341796875, Innerproduct 0.8776858303351253
+2025-02-17 19:00:09.518253: Generating state at distance 0.999847412109375
+2025-02-17 19:06:25.853916: Double excitation state not found at distance 0.999847412109375, Innerproduct 0.8776774429031557
+2025-02-17 19:06:25.918722: Generating state at distance 0.999908447265625
+2025-02-17 19:12:25.771705: Double excitation state not found at distance 0.999908447265625, Innerproduct 0.8776732507408459
+2025-02-17 19:12:25.877148: Generating state at distance 0.99993896484375
+2025-02-17 19:18:28.405372: Double excitation state not found at distance 0.99993896484375, Innerproduct 0.8776711550481289
+2025-02-17 19:18:28.992190: Generating state at distance 0.9999542236328125
+2025-02-17 19:24:44.985575: Double excitation state not found at distance 0.9999542236328125, Innerproduct 0.8776701072988106
+2025-02-17 19:24:45.089859: Generating state at distance 0.9999618530273438
+2025-02-17 19:30:54.734848: Double excitation state not found at distance 0.9999618530273438, Innerproduct 0.8776695834486195
+2025-02-17 19:30:55.067367: Generating state at distance 0.9999656677246094
+2025-02-17 19:37:11.782257: Double excitation state not found at distance 0.9999656677246094, Innerproduct 0.8776693215292417
+2025-02-17 19:37:11.883361: Generating state at distance 0.9999675750732422
+2025-02-17 19:43:35.786893: Double excitation state found at distance 0.9999675750732422, Innerproduct 0.9999999996469302, DE=6
+2025-02-17 19:43:36.612666: Generating state at distance 0.7499675750732422
+2025-02-17 19:49:43.297175: Double excitation state not found at distance 0.7499675750732422, Innerproduct 0.8208427133890698
+2025-02-17 19:49:43.392826: Generating state at distance 0.8749675750732422
+2025-02-17 19:55:55.846461: Double excitation state not found at distance 0.8749675750732422, Innerproduct 0.873363988676666
+2025-02-17 19:55:55.943141: Generating state at distance 0.9374675750732422
+2025-02-17 20:01:58.581398: Double excitation state not found at distance 0.9374675750732422, Innerproduct 0.8826347804179937
+2025-02-17 20:01:58.714350: Generating state at distance 0.9687175750732422
+2025-02-17 20:07:48.650703: Double excitation state not found at distance 0.9687175750732422, Innerproduct 0.8799470078884036
+2025-02-17 20:07:49.188302: Generating state at distance 0.9843425750732422
+2025-02-17 20:13:54.821670: Double excitation state not found at distance 0.9843425750732422, Innerproduct 0.8787637105270762
+2025-02-17 20:13:54.914338: Generating state at distance 0.9921550750732422
+2025-02-17 20:20:00.186481: Double excitation state not found at distance 0.9921550750732422, Innerproduct 0.8782026768571293
+2025-02-17 20:20:00.360006: Generating state at distance 0.9960613250732422
+2025-02-17 20:26:25.737473: Double excitation state not found at distance 0.9960613250732422, Innerproduct 0.8779278403725083
+2025-02-17 20:26:25.964284: Generating state at distance 0.9980144500732422
+2025-02-17 20:32:44.530755: Double excitation state not found at distance 0.9980144500732422, Innerproduct 0.8777921103965062
+2025-02-17 20:32:44.728632: Generating state at distance 0.9989910125732422
+2025-02-17 20:39:15.482616: Double excitation state not found at distance 0.9989910125732422, Innerproduct 0.8777246548565899
+2025-02-17 20:39:15.583718: Generating state at distance 0.9994792938232422
+2025-02-17 20:45:27.614309: Double excitation state not found at distance 0.9994792938232422, Innerproduct 0.8776910279009746
+2025-02-17 20:45:27.695800: Generating state at distance 0.9997234344482422
+2025-02-17 20:51:50.353501: Double excitation state not found at distance 0.9997234344482422, Innerproduct 0.8776742394351391
+2025-02-17 20:51:50.483643: Generating state at distance 0.9998455047607422
+2025-02-17 20:58:12.459853: Double excitation state not found at distance 0.9998455047607422, Innerproduct 0.8776658514315341
+2025-02-17 20:58:12.512156: Generating state at distance 0.9999065399169922
+2025-02-17 21:04:44.059137: Double excitation state not found at distance 0.9999065399169922, Innerproduct 0.8776616589837117
+2025-02-17 21:04:44.124596: Generating state at distance 0.9999370574951172
+2025-02-17 21:11:10.484857: Double excitation state not found at distance 0.9999370574951172, Innerproduct 0.8776595631482327
+2025-02-17 21:11:10.550273: Generating state at distance 0.9999523162841797
+2025-02-17 21:18:00.209934: Double excitation state not found at distance 0.9999523162841797, Innerproduct 0.8776585153272519
+2025-02-17 21:18:00.508098: Generating state at distance 0.9999599456787109
+2025-02-17 21:24:48.374169: Double excitation state not found at distance 0.9999599456787109, Innerproduct 0.8776579914413511
+2025-02-17 21:24:48.508591: Generating state at distance 0.9999637603759766
+2025-02-17 21:31:27.016426: Double excitation state not found at distance 0.9999637603759766, Innerproduct 0.8776577295043553
+2025-02-17 21:31:27.091601: Generating state at distance 0.9999656677246094
+2025-02-17 21:38:16.956242: Double excitation state not found at distance 0.9999656677246094, Innerproduct 0.8776575985370789
+2025-02-17 21:38:17.099181: Generating state at distance 0.9999666213989258
+2025-02-17 21:44:24.421153: Double excitation state found at distance 0.9999666213989258, Innerproduct 0.9999999999117251, DE=6
+2025-02-17 21:44:24.847407: Generating state at distance 0.7499666213989258
+2025-02-17 21:50:55.311776: Double excitation state not found at distance 0.7499666213989258, Innerproduct 0.8208376745885256
+2025-02-17 21:50:55.343068: Generating state at distance 0.8749666213989258
+2025-02-17 21:57:48.433250: Double excitation state not found at distance 0.8749666213989258, Innerproduct 0.8733584542558567
+2025-02-17 21:57:48.581223: Generating state at distance 0.9374666213989258
+2025-02-17 22:04:53.430779: Double excitation state not found at distance 0.9374666213989258, Innerproduct 0.8826291692394195
+2025-02-17 22:04:53.459853: Generating state at distance 0.9687166213989258
+2025-02-17 22:11:52.370472: Double excitation state not found at distance 0.9687166213989258, Innerproduct 0.8799412927542644
+2025-02-17 22:11:52.399233: Generating state at distance 0.9843416213989258
+2025-02-17 22:19:01.663374: Double excitation state not found at distance 0.9843416213989258, Innerproduct 0.8787579521643742
+2025-02-17 22:19:01.749708: Generating state at distance 0.9921541213989258
+2025-02-17 22:25:59.456286: Double excitation state not found at distance 0.9921541213989258, Innerproduct 0.8781968991615186
+2025-02-17 22:25:59.760742: Generating state at distance 0.9960603713989258
+2025-02-17 22:32:52.098331: Double excitation state not found at distance 0.9960603713989258, Innerproduct 0.8779220531376717
+2025-02-17 22:32:52.181308: Generating state at distance 0.9980134963989258
+2025-02-17 22:39:25.493403: Double excitation state not found at distance 0.9980134963989258, Innerproduct 0.8777863184944944
+2025-02-17 22:39:25.566848: Generating state at distance 0.9989900588989258
+2025-02-17 22:46:30.653178: Double excitation state not found at distance 0.9989900588989258, Innerproduct 0.8777188606458506
+2025-02-17 22:46:30.912859: Generating state at distance 0.9994783401489258
+2025-02-17 22:53:47.588642: Double excitation state not found at distance 0.9994783401489258, Innerproduct 0.8776852325423382
+2025-02-17 22:53:47.620147: Generating state at distance 0.9997224807739258
+2025-02-17 23:00:35.736651: Double excitation state not found at distance 0.9997224807739258, Innerproduct 0.8776684435043355
+2025-02-17 23:00:35.811593: Generating state at distance 0.9998445510864258
+2025-02-17 23:07:20.969437: Double excitation state not found at distance 0.9998445510864258, Innerproduct 0.8776600552146296
+2025-02-17 23:07:21.072576: Generating state at distance 0.9999055862426758
+2025-02-17 23:14:10.748075: Double excitation state not found at distance 0.9999055862426758, Innerproduct 0.877655862624186
+2025-02-17 23:14:10.780885: Generating state at distance 0.9999361038208008
+2025-02-17 23:21:12.958621: Double excitation state not found at distance 0.9999361038208008, Innerproduct 0.877653766717238
+2025-02-17 23:21:12.986323: Generating state at distance 0.9999513626098633
+2025-02-17 23:27:43.000749: Double excitation state not found at distance 0.9999513626098633, Innerproduct 0.8776527188607156
+2025-02-17 23:27:43.041750: Generating state at distance 0.9999589920043945
+2025-02-17 23:34:15.839034: Double excitation state not found at distance 0.9999589920043945, Innerproduct 0.8776521949566792
+2025-02-17 23:34:16.309305: Generating state at distance 0.9999628067016602
+2025-02-17 23:41:20.896677: Double excitation state not found at distance 0.9999628067016602, Innerproduct 0.877651933010605
+2025-02-17 23:41:20.922382: Generating state at distance 0.999964714050293
+2025-02-17 23:48:29.876819: Double excitation state not found at distance 0.999964714050293, Innerproduct 0.8776518020391759
+2025-02-17 23:48:29.913390: Generating state at distance 0.9999656677246094
+2025-02-17 23:55:01.566629: Double excitation state not found at distance 0.9999656677246094, Innerproduct 0.8776517365540938
+2025-02-17 23:55:01.831428: Generating state at distance 0.9999661445617676
+2025-02-18 00:02:00.358783: Double excitation state not found at distance 0.9999661445617676, Innerproduct 0.8776517038114321
+2025-02-18 00:02:00.388975: Generating state at distance 0.9999663829803467
+2025-02-18 00:09:25.282552: Double excitation state not found at distance 0.9999663829803467, Innerproduct 0.8776516874402222
+2025-02-18 00:09:25.405717: Generating state at distance 0.9999665021896362
+2025-02-18 00:15:42.656726: Double excitation state not found at distance 0.9999665021896362, Innerproduct 0.8776516792544966
+2025-02-18 00:15:42.894980: Generating state at distance 0.999966561794281
+2025-02-18 00:20:02.152292: Double excitation state found at distance 0.999966561794281, Innerproduct 0.9999999999996555, DE=6
+2025-02-18 00:20:02.632268: Generating state at distance 0.749966561794281
+2025-02-18 00:25:37.154853: Double excitation state not found at distance 0.749966561794281, Innerproduct 0.8208373596548745
+2025-02-18 00:25:37.224237: Generating state at distance 0.874966561794281
+2025-02-18 00:31:53.294420: Double excitation state not found at distance 0.874966561794281, Innerproduct 0.8733581083455874
+2025-02-18 00:31:53.350534: Generating state at distance 0.937466561794281
+2025-02-18 00:38:23.158078: Double excitation state not found at distance 0.937466561794281, Innerproduct 0.8826288185310724
+2025-02-18 00:38:23.348005: Generating state at distance 0.968716561794281
+2025-02-18 00:45:09.284649: Double excitation state not found at distance 0.968716561794281, Innerproduct 0.8799409355493873
+2025-02-18 00:45:09.660571: Generating state at distance 0.984341561794281
+2025-02-18 00:51:26.449073: Double excitation state not found at distance 0.984341561794281, Innerproduct 0.87875759225744
+2025-02-18 00:51:26.521392: Generating state at distance 0.992154061794281
+2025-02-18 00:58:15.835440: Double excitation state not found at distance 0.992154061794281, Innerproduct 0.8781965380458395
+2025-02-18 00:58:16.080437: Generating state at distance 0.996060311794281
+2025-02-18 01:05:03.635079: Double excitation state not found at distance 0.996060311794281, Innerproduct 0.8779216914256658
+2025-02-18 01:05:03.803525: Generating state at distance 0.998013436794281
+2025-02-18 01:11:17.103415: Double excitation state not found at distance 0.998013436794281, Innerproduct 0.8777859564909306
+2025-02-18 01:11:17.226713: Generating state at distance 0.998989999294281
+2025-02-18 01:17:33.201012: Double excitation state not found at distance 0.998989999294281, Innerproduct 0.8777184984980834
+2025-02-18 01:17:33.257514: Generating state at distance 0.999478280544281
+2025-02-18 01:24:11.967623: Double excitation state not found at distance 0.999478280544281, Innerproduct 0.8776848703230964
+2025-02-18 01:24:12.099922: Generating state at distance 0.999722421169281
+2025-02-18 01:31:21.403332: Double excitation state not found at distance 0.999722421169281, Innerproduct 0.8776680812487915
+2025-02-18 01:31:21.483910: Generating state at distance 0.999844491481781
+2025-02-18 01:37:49.378487: Double excitation state not found at distance 0.999844491481781, Innerproduct 0.8776596929416491
+2025-02-18 01:37:49.439825: Generating state at distance 0.999905526638031
+2025-02-18 01:44:11.552478: Double excitation state not found at distance 0.999905526638031, Innerproduct 0.8776555003420868
+2025-02-18 01:44:11.666222: Generating state at distance 0.999936044216156
+2025-02-18 01:51:10.562626: Double excitation state not found at distance 0.999936044216156, Innerproduct 0.8776534044304227
+2025-02-18 01:51:10.815417: Generating state at distance 0.9999513030052185
+2025-02-18 01:57:43.045240: Double excitation state not found at distance 0.9999513030052185, Innerproduct 0.877652356572229
+2025-02-18 01:57:43.120735: Generating state at distance 0.9999589323997498
+2025-02-18 02:04:12.763566: Double excitation state not found at distance 0.9999589323997498, Innerproduct 0.8776518326669535
+2025-02-18 02:04:12.911999: Generating state at distance 0.9999627470970154
+2025-02-18 02:10:09.499703: Double excitation state not found at distance 0.9999627470970154, Innerproduct 0.8776515707206087
+2025-02-18 02:10:09.652037: Generating state at distance 0.9999646544456482
+2025-02-18 02:16:49.552125: Double excitation state not found at distance 0.9999646544456482, Innerproduct 0.8776514397487133
+2025-02-18 02:16:49.662525: Generating state at distance 0.9999656081199646
+2025-02-18 02:23:22.502470: Double excitation state not found at distance 0.9999656081199646, Innerproduct 0.87765137426314
+2025-02-18 02:23:22.566017: Generating state at distance 0.9999660849571228
+2025-02-18 02:29:40.594713: Double excitation state not found at distance 0.9999660849571228, Innerproduct 0.8776513415204446
+2025-02-18 02:29:40.772954: Generating state at distance 0.9999663233757019
+2025-02-18 02:35:49.783817: Double excitation state not found at distance 0.9999663233757019, Innerproduct 0.8776513251493848
+2025-02-18 02:35:49.839116: Generating state at distance 0.9999664425849915
+2025-02-18 02:42:03.696119: Double excitation state not found at distance 0.9999664425849915, Innerproduct 0.8776513169635799
+2025-02-18 02:42:03.773833: Generating state at distance 0.9999665021896362
+2025-02-18 02:48:24.895926: Double excitation state not found at distance 0.9999665021896362, Innerproduct 0.877651312870757
+2025-02-18 02:48:24.979930: Generating state at distance 0.9999665319919586
+2025-02-18 02:54:58.060356: Double excitation state not found at distance 0.9999665319919586, Innerproduct 0.8776513108244474
+2025-02-18 02:54:58.152472: Generating state at distance 0.9999665468931198
+2025-02-18 03:01:05.393028: Double excitation state not found at distance 0.9999665468931198, Innerproduct 0.8776513098009853
+2025-02-18 03:01:05.697466: Generating state at distance 0.9999665543437004
+2025-02-18 03:07:05.337030: Double excitation state not found at distance 0.9999665543437004, Innerproduct 0.877651309289524
+2025-02-18 03:07:05.545644: Generating state at distance 0.9999665580689907
+2025-02-18 03:13:10.444950: Double excitation state found at distance 0.9999665580689907, Innerproduct 0.9999999999999988, DE=6
+2025-02-18 03:13:11.060675: Generating state at distance 0.7499665580689907
+2025-02-18 03:19:27.588518: Double excitation state not found at distance 0.7499665580689907, Innerproduct 0.8208373399656812
+2025-02-18 03:19:27.772110: Generating state at distance 0.8749665580689907
+2025-02-18 03:26:00.445782: Double excitation state not found at distance 0.8749665580689907, Innerproduct 0.873358086719865
+2025-02-18 03:26:00.562457: Generating state at distance 0.9374665580689907
+2025-02-18 03:32:22.841452: Double excitation state not found at distance 0.9374665580689907, Innerproduct 0.8826287966058254
+2025-02-18 03:32:22.872491: Generating state at distance 0.9687165580689907
+2025-02-18 03:39:08.921841: Double excitation state not found at distance 0.9687165580689907, Innerproduct 0.8799409132172911
+2025-02-18 03:39:09.161706: Generating state at distance 0.9843415580689907
+2025-02-18 03:45:59.094044: Double excitation state not found at distance 0.9843415580689907, Innerproduct 0.8787575697568023
+2025-02-18 03:45:59.122984: Generating state at distance 0.9921540580689907
+2025-02-18 03:52:30.485475: Double excitation state not found at distance 0.9921540580689907, Innerproduct 0.8781965154701163
+2025-02-18 03:52:30.551409: Generating state at distance 0.9960603080689907
+2025-02-18 03:59:02.139454: Double excitation state not found at distance 0.9960603080689907, Innerproduct 0.8779216688125828
+2025-02-18 03:59:02.170589: Generating state at distance 0.9980134330689907
+2025-02-18 04:05:37.615600: Double excitation state not found at distance 0.9980134330689907, Innerproduct 0.8777859338594539
+2025-02-18 04:05:37.692706: Generating state at distance 0.9989899955689907
+2025-02-18 04:12:18.192143: Double excitation state not found at distance 0.9989899955689907, Innerproduct 0.8777184758578798
+2025-02-18 04:12:18.515808: Generating state at distance 0.9994782768189907
+2025-02-18 04:19:09.881116: Double excitation state not found at distance 0.9994782768189907, Innerproduct 0.8776848476778596
+2025-02-18 04:19:09.968836: Generating state at distance 0.9997224174439907
+2025-02-18 04:25:47.252834: Double excitation state not found at distance 0.9997224174439907, Innerproduct 0.877668058601632
+2025-02-18 04:25:47.316417: Generating state at distance 0.9998444877564907
+2025-02-18 04:32:38.410820: Double excitation state not found at distance 0.9998444877564907, Innerproduct 0.8776596702930629
+2025-02-18 04:32:38.490305: Generating state at distance 0.9999055229127407
+2025-02-18 04:38:50.926818: Double excitation state not found at distance 0.9999055229127407, Innerproduct 0.8776554776932618
+2025-02-18 04:38:50.977026: Generating state at distance 0.9999360404908657
+2025-02-18 04:45:13.776965: Double excitation state not found at distance 0.9999360404908657, Innerproduct 0.8776533817813136
+2025-02-18 04:45:13.939678: Generating state at distance 0.9999512992799282
+2025-02-18 04:52:03.580533: Double excitation state not found at distance 0.9999512992799282, Innerproduct 0.8776523339226102
+2025-02-18 04:52:03.610592: Generating state at distance 0.9999589286744595
+2025-02-18 04:58:49.701504: Double excitation state not found at distance 0.9999589286744595, Innerproduct 0.8776518100178661
+2025-02-18 04:58:49.783540: Generating state at distance 0.9999627433717251
+2025-02-18 05:04:58.622226: Double excitation state not found at distance 0.9999627433717251, Innerproduct 0.8776515480708404
+2025-02-18 05:04:58.741450: Generating state at distance 0.9999646507203579
+2025-02-18 05:11:19.104827: Double excitation state not found at distance 0.9999646507203579, Innerproduct 0.8776514170993248
+2025-02-18 05:11:19.322610: Generating state at distance 0.9999656043946743
+2025-02-18 05:17:43.449198: Double excitation state not found at distance 0.9999656043946743, Innerproduct 0.8776513516136044
+2025-02-18 05:17:44.022036: Generating state at distance 0.9999660812318325
+2025-02-18 05:24:04.668536: Double excitation state not found at distance 0.9999660812318325, Innerproduct 0.877651318870945
+2025-02-18 05:24:04.802964: Generating state at distance 0.9999663196504116
+2025-02-18 05:30:06.286508: Double excitation state not found at distance 0.9999663196504116, Innerproduct 0.8776513024997039
+2025-02-18 05:30:06.466822: Generating state at distance 0.9999664388597012
+2025-02-18 05:36:07.492444: Double excitation state not found at distance 0.9999664388597012, Innerproduct 0.8776512943140157
+2025-02-18 05:36:07.607238: Generating state at distance 0.9999664984643459
+2025-02-18 05:42:16.040648: Double excitation state not found at distance 0.9999664984643459, Innerproduct 0.8776512902212562
+2025-02-18 05:42:16.070551: Generating state at distance 0.9999665282666683
+2025-02-18 05:49:09.572569: Double excitation state not found at distance 0.9999665282666683, Innerproduct 0.8776512881747545
+2025-02-18 05:49:09.602656: Generating state at distance 0.9999665431678295
+2025-02-18 05:56:16.221982: Double excitation state not found at distance 0.9999665431678295, Innerproduct 0.8776512871519364
+2025-02-18 05:56:16.318429: Generating state at distance 0.9999665506184101
+2025-02-18 06:03:29.461895: Double excitation state not found at distance 0.9999665506184101, Innerproduct 0.8776512866399472
+2025-02-18 06:03:29.534713: Generating state at distance 0.9999665543437004
+2025-02-18 06:10:06.030375: Double excitation state not found at distance 0.9999665543437004, Innerproduct 0.8776512863842495
+2025-02-18 06:10:06.062512: Generating state at distance 0.9999665562063456
+2025-02-18 06:17:18.341615: Double excitation state found at distance 0.9999665562063456, Innerproduct 0.9999999999999999, DE=6
+2025-02-18 06:17:18.855201: Generating state at distance 0.7499665562063456
+2025-02-18 06:23:57.613012: Double excitation state not found at distance 0.7499665562063456, Innerproduct 0.820837330129633
+2025-02-18 06:23:58.139364: Generating state at distance 0.8749665562063456
+2025-02-18 06:30:28.794118: Double excitation state not found at distance 0.8749665562063456, Innerproduct 0.8733580759157425
+2025-02-18 06:30:28.863612: Generating state at distance 0.9374665562063456
+2025-02-18 06:37:13.999619: Double excitation state not found at distance 0.9374665562063456, Innerproduct 0.8826287856513031
+2025-02-18 06:37:14.096565: Generating state at distance 0.9687165562063456
+2025-02-18 06:43:56.475653: Double excitation state not found at distance 0.9687165562063456, Innerproduct 0.8799409020607636
+2025-02-18 06:43:56.542448: Generating state at distance 0.9843415562063456
+2025-02-18 06:50:34.868138: Double excitation state not found at distance 0.9843415562063456, Innerproduct 0.8787575585155709
+2025-02-18 06:50:34.954458: Generating state at distance 0.9921540562063456
+2025-02-18 06:56:52.017572: Double excitation state not found at distance 0.9921540562063456, Innerproduct 0.8781965041911176
+2025-02-18 06:56:52.090931: Generating state at distance 0.9960603062063456
+2025-02-18 07:02:52.399587: Double excitation state not found at distance 0.9960603062063456, Innerproduct 0.8779216575152385
+2025-02-18 07:02:52.642687: Generating state at distance 0.9980134312063456
+2025-02-18 07:09:11.981906: Double excitation state not found at distance 0.9980134312063456, Innerproduct 0.8777859225528225
+2025-02-18 07:09:12.093575: Generating state at distance 0.9989899937063456
+2025-02-18 07:15:30.771869: Double excitation state not found at distance 0.9989899937063456, Innerproduct 0.8777184645465025
+2025-02-18 07:15:30.857929: Generating state at distance 0.9994782749563456
+2025-02-18 07:21:59.381039: Double excitation state not found at distance 0.9994782749563456, Innerproduct 0.8776848363645161
+2025-02-18 07:21:59.469696: Generating state at distance 0.9997224155813456
+2025-02-18 07:28:18.856593: Double excitation state not found at distance 0.9997224155813456, Innerproduct 0.8776680472870624
+2025-02-18 07:28:19.014427: Generating state at distance 0.9998444858938456
+2025-02-18 07:34:40.162123: Double excitation state not found at distance 0.9998444858938456, Innerproduct 0.8776596589779261
+2025-02-18 07:34:41.137489: Generating state at distance 0.9999055210500956
+2025-02-18 07:41:09.057524: Double excitation state not found at distance 0.9999055210500956, Innerproduct 0.8776554663776516
+2025-02-18 07:41:09.191022: Generating state at distance 0.9999360386282206
+2025-02-18 07:47:30.273031: Double excitation state not found at distance 0.9999360386282206, Innerproduct 0.8776533704660182
+2025-02-18 07:47:30.372776: Generating state at distance 0.9999512974172831
+2025-02-18 07:53:40.355787: Double excitation state not found at distance 0.9999512974172831, Innerproduct 0.8776523226070685
+2025-02-18 07:53:40.468356: Generating state at distance 0.9999589268118143
+2025-02-18 07:59:41.809771: Double excitation state not found at distance 0.9999589268118143, Innerproduct 0.8776517987017896
+2025-02-18 07:59:41.875855: Generating state at distance 0.9999627415090799
+2025-02-18 08:06:16.913668: Double excitation state not found at distance 0.9999627415090799, Innerproduct 0.8776515367551085
+2025-02-18 08:06:17.027904: Generating state at distance 0.9999646488577127
+2025-02-18 08:12:40.350659: Double excitation state not found at distance 0.9999646488577127, Innerproduct 0.8776514057834961
+2025-02-18 08:12:40.539933: Generating state at distance 0.9999656025320292
+2025-02-18 08:18:50.628880: Double excitation state not found at distance 0.9999656025320292, Innerproduct 0.877651340298
+2025-02-18 08:18:50.701700: Generating state at distance 0.9999660793691874
+2025-02-18 08:25:01.978328: Double excitation state not found at distance 0.9999660793691874, Innerproduct 0.8776513075553438
+2025-02-18 08:25:02.095120: Generating state at distance 0.9999663177877665
+2025-02-18 08:31:27.053635: Double excitation state not found at distance 0.9999663177877665, Innerproduct 0.8776512911838497
+2025-02-18 08:31:27.108431: Generating state at distance 0.999966436997056
+2025-02-18 08:37:38.150972: Double excitation state not found at distance 0.999966436997056, Innerproduct 0.8776512829981141
+2025-02-18 08:37:38.333836: Generating state at distance 0.9999664966017008
+2025-02-18 08:44:48.005362: Double excitation state not found at distance 0.9999664966017008, Innerproduct 0.8776512789057895
+2025-02-18 08:44:48.388357: Generating state at distance 0.9999665264040232
+2025-02-18 08:51:11.895341: Double excitation state not found at distance 0.9999665264040232, Innerproduct 0.8776512768589829
+2025-02-18 08:51:11.987384: Generating state at distance 0.9999665413051844
+2025-02-18 08:57:16.573050: Double excitation state not found at distance 0.9999665413051844, Innerproduct 0.8776512758359131
+2025-02-18 08:57:16.728079: Generating state at distance 0.999966548755765
+2025-02-18 09:03:39.863830: Double excitation state not found at distance 0.999966548755765, Innerproduct 0.8776512753243297
+2025-02-18 09:03:39.924991: Generating state at distance 0.9999665524810553
+2025-02-18 09:09:51.097095: Double excitation state not found at distance 0.9999665524810553, Innerproduct 0.8776512750685169
+2025-02-18 09:09:51.199186: Generating state at distance 0.9999665543437004
+2025-02-18 09:16:07.058603: Double excitation state not found at distance 0.9999665543437004, Innerproduct 0.8776512749404103
+2025-02-18 09:16:07.158317: Generating state at distance 0.999966555275023
+2025-02-18 09:22:33.248049: Double excitation state found at distance 0.999966555275023, Innerproduct 1.0000000000000002, DE=6
+2025-02-18 09:22:33.987162: Generating state at distance 0.749966555275023
+2025-02-18 09:28:45.960042: Double excitation state not found at distance 0.749966555275023, Innerproduct 0.8208373252073943
+2025-02-18 09:28:46.063587: Generating state at distance 0.874966555275023
+2025-02-18 09:34:50.327738: Double excitation state not found at distance 0.874966555275023, Innerproduct 0.8733580705093059
+2025-02-18 09:34:50.403413: Generating state at distance 0.937466555275023
+2025-02-18 09:40:46.121533: Double excitation state not found at distance 0.937466555275023, Innerproduct 0.8826287801701963
+2025-02-18 09:40:46.216050: Generating state at distance 0.968716555275023
+2025-02-18 09:46:58.511827: Double excitation state not found at distance 0.968716555275023, Innerproduct 0.8799408964779311
+2025-02-18 09:46:58.638672: Generating state at distance 0.984341555275023
+slurmstepd: error: *** JOB 15919483 ON node124 CANCELLED AT 2025-02-18T09:51:50 ***
+
+============================
+ Job utilisation efficiency
+============================
+
+Job ID: 15919483
+Cluster: viking2.yor.alces.network
+User/Group: jcre500/clusterusers
+State: CANCELLED (exit code 0)
+Nodes: 1
+Cores per node: 40
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 53-13:36:40 core-walltime
+Job Wall-clock time: 1-08:08:25
+Memory Utilized: 2.58 GB
+Memory Efficiency: 8.05% of 32.00 GB
+ Requested wall clock time: 4-04:00:00
+    Actual wall clock time: 1-08:08:25
+Wall clock time efficiency: 32.1%
+           Job queued time: 11:34:26

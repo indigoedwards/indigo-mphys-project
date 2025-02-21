@@ -9,7 +9,7 @@ plt.imshow(state.real[:,0,:,0], cmap="seismic", vmax=0.75, vmin=-0.75, extent=[-
 plt.xlabel("x, position of electron 1 (Bohrs)")
 plt.ylabel("x', poisition of electron 2 (Bohrs)")
 plt.colorbar()
-plt.title("Gaussian1 Double Excitation, Zoomed, Excitation 7")
+plt.title("Gaussian3 Double Excitation, Zoomed, Excitation 12")
 plt.xlim([-5,5])
 plt.ylim([-5,5])
 plt.show()

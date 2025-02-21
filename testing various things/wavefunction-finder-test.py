@@ -25,18 +25,18 @@ def potential(x,d,potential_name):
             if x[xindex]<=-d-2:
                 potential1[xindex] = 0
             if -d-2<x[xindex]<=-d:
-                potential1[xindex] = -2*(x[xindex]+d)-8
+                potential1[xindex] = -4*(x[xindex]+d)-8
             if -d<x[xindex]<=-d+2:
-                potential1[xindex] = 2*(x[xindex]+d)-8
+                potential1[xindex] = 4*(x[xindex]+d)-8
             if -d+2<x[xindex]:
                 potential1[xindex] = 0
         for xindex in range(0,len(x)):
             if x[xindex]<=d-2:
                 potential2[xindex] = 0
             if d-2<x[xindex]<=d:
-                potential2[xindex] = -2*(x[xindex]-d)-8.001
+                potential2[xindex] = -4*(x[xindex]-d)-8.01
             if d<x[xindex]<=d+2:
-                potential2[xindex] = 2*(x[xindex]-d)-8.001
+                potential2[xindex] = 4*(x[xindex]-d)-8.01
             if d+2<x[xindex]:
                 potential2[xindex] = 0
 
@@ -99,13 +99,13 @@ def potential(x,d,potential_name):
         arr2 = np.zeros_like(x)
 
         # First condition: -4 <= (x - d) <= 4
-        condition1 = (-4 <= (x - d)) & (x - d <= 4)
+        condition1 = (-4.08 <= (x - d)) & (x - d <= 4.08)
         
         # Second condition: -4 <= (x + d) <= 4
         condition2 = (-4 <= (x + d)) & (x + d <= 4)
 
         # Apply the first formula where the first condition is true
-        arr1[condition1] = 0.25 * (x[condition1] - d)**2 - 4
+        arr1[condition1] = 0.24 * (x[condition1] - d)**2 - 4
         
         # Apply the second formula where the second condition is true
         arr2[condition2] = 0.25 * (x[condition2] + d)**2 - 4
@@ -128,7 +128,7 @@ def potential(x,d,potential_name):
         condition2= ((-d - 2) <= x) & ((-d-1) >= x)
         condition3= ((-d + 1) <= x) & ((-d+2) >= x)
 
-        arr2[condition1] = -4
+        arr2[condition1] = -4.01
         arr2[condition2] = -4*(x[condition2]+d+2)
         arr2[condition3] = 4*(x[condition3]+d-2)
 
@@ -146,7 +146,7 @@ def potential(x,d,potential_name):
         condition2 = (-np.pi <= (x + d)) & (x + d <= np.pi)
 
         # Apply the first formula where the first condition is true
-        arr1[condition1] = -2 * np.cos(x[condition1] - d) - 2
+        arr1[condition1] = -2.1 * np.cos(x[condition1] - d) - 2.1
         
         # Apply the second formula where the second condition is true
         arr2[condition2] = -2 * np.cos(x[condition2] + d) - 2
@@ -180,8 +180,8 @@ def potential(x,d,potential_name):
         condition1 = (-d<=x) & (x<=-d+2)
         condition2 = (-d-2<=x) & (x<=-d)
 
-        arr2[condition1] = (x[condition1]+d-2)-4
-        arr2[condition2] = -(x[condition2]+d+2)-4
+        arr2[condition1] = (x[condition1]+d-2)-4.01
+        arr2[condition2] = -(x[condition2]+d+2)-4.01
 
         return arr1+arr2
     
@@ -189,11 +189,11 @@ def potential(x,d,potential_name):
         arr1 = np.zeros_like(x)
         arr2 = np.zeros_like(x)
 
-        condition1 = (d-2<=x) & (x<=d+2)
-        condition2 = (-d-2<=x) & (x <= -d+2)
+        condition1 = (d-4.01<=x) & (x<=d+4)
+        condition2 = (-d-4<=x) & (x <= -d+4)
 
-        arr1[condition1] = (2/3)*(x[condition1]-d-2)
-        arr2[condition2] = (2/3)*(x[condition2]+d-2)
+        arr1[condition1] = (2/3)*(x[condition1]-d-4.01)
+        arr2[condition2] = (2/3)*(x[condition2]+d-4)
 
         return arr1 + arr2
     
@@ -238,12 +238,12 @@ def single():
     plt.close()
 
 def double(e): 
-    v_ext = potential(x,10,"square3")
-    system = idea.system.System(x,v_ext,v_int,electrons="uu")
+    v_ext = potential(x,10,"gaussian1")
+    system = idea.system.System(x,v_ext,v_int,electrons="ud")
     state = idea.methods.interacting.solve(system,k=e)
 
    
-    plt.imshow(state.full[...][:,0,:,0], cmap="seismic", vmax=0.75, vmin=-0.75, extent=[-20, 20, 20, -20], aspect=1)
+    plt.imshow(state.full[:,0,:,1], cmap="seismic", vmax=0.75, vmin=-0.75, extent=[-20, 20, 20, -20], aspect=1)
     plt.xlabel("x, position of electron 1 (Bohrs)")
     plt.ylabel("x', poisition of electron 2 (Bohrs)")
     plt.colorbar()
@@ -260,4 +260,4 @@ def double(e):
     plt.show()
     plt.close()
 
-double(5)
+double(0)
